@@ -10,20 +10,21 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <main class="page page-wide">
     <nav class="site-nav">
       <a class="logo" href="index.html">finvita</a>
       <div class="nav-links" id="nav-links">
         <a href="index.html#diagnose">Diagnose</a>
-        <a href="blog.html">Blog</a>
+        <a href="blog.html" class="active" aria-current="page">Blog</a>
         <a href="about.html">About</a>
       </div>
       <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
     </nav>
 
-    <h1>Blog</h1>
+    <h1 id="main-content">Blog</h1>
     <div class="blog-empty">New here. Our first posts are on the way. Check back soon.</div>
 
     <footer class="site-footer">
