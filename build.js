@@ -73,7 +73,10 @@ function main() {
 }
 
 function buildSitemap(outcomes) {
-  const staticPages = ['/', '/diagnose-fish.html', '/diagnose-water.html', '/diagnose-plants.html'];
+  const staticPages = [
+    '/', '/diagnose-fish.html', '/diagnose-water.html', '/diagnose-plants.html',
+    '/about.html', '/privacy.html', '/contact.html',
+  ];
   const resultPages = Object.keys(outcomes).map((slug) => `/results/${slug}.html`);
   const urls = [...staticPages, ...resultPages]
     .map((p) => `  <url><loc>${SITE_URL}${p}</loc></url>`)
