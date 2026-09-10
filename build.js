@@ -21,17 +21,16 @@ function escapeHtml(str) {
 }
 
 function productCardHtml(product) {
-  const img = product.imageUrl
-    ? `<img src="${escapeHtml(product.imageUrl)}" alt="${escapeHtml(product.name)}">`
-    : '';
   return `
-      <li class="product-card">
-        ${img}
-        <div class="product-info">
-          <h3>${escapeHtml(product.name)}</h3>
-          <p class="product-note">${escapeHtml(product.note)}</p>
-          <a class="product-link" href="${escapeHtml(product.amazonAffiliateUrl)}" rel="sponsored noopener" target="_blank">View on Amazon</a>
+      <li class="pcard">
+        <div class="pimg"></div>
+        <div>
+          <div class="pname">${escapeHtml(product.name)}</div>
+          <div class="pnote">${escapeHtml(product.note)}</div>
         </div>
+        <a class="pbtn" href="${escapeHtml(product.amazonAffiliateUrl)}" rel="sponsored noopener" target="_blank" aria-label="View ${escapeHtml(product.name)} on Amazon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
       </li>`;
 }
 
@@ -42,6 +41,12 @@ function productsSectionHtml(outcome, products) {
     <ul class="product-list">${cards}
     </ul>
     <p class="disclosure">As an Amazon Associate, we earn from qualifying purchases made through the links above. See our <a href="../disclosure.html">disclosure</a> for details.</p>`;
+}
+
+function tagSectionHtml(outcome) {
+  if (outcome.confidence === 'likely') return '<div class="tag">Likely cause</div>';
+  if (outcome.confidence === 'possible') return '<div class="tag">Possible cause</div>';
+  return '';
 }
 
 function main() {
@@ -58,6 +63,7 @@ function main() {
       .replace(/{{EXPLANATION}}/g, escapeHtml(outcome.explanation))
       .replace(/{{META_DESCRIPTION}}/g, escapeHtml(truncate(outcome.explanation, 155)))
       .replace(/{{CANONICAL_URL}}/g, canonicalUrl)
+      .replace('{{TAG_SECTION}}', tagSectionHtml(outcome))
       .replace('{{PRODUCTS_SECTION}}', productsSectionHtml(outcome, products));
     fs.writeFileSync(path.join(outDir, `${slug}.html`), html);
   }

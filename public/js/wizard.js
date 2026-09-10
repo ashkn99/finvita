@@ -25,7 +25,7 @@
     optionsContainer.innerHTML = '';
     node.options.forEach((option) => {
       const button = document.createElement('button');
-      button.className = 'option-button';
+      button.className = 'opt';
       button.textContent = option.label;
       button.addEventListener('click', () => handleAnswer(option.next));
       optionsContainer.appendChild(button);
