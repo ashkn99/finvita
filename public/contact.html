@@ -10,10 +10,18 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <main class="page">
-    <div class="topbar">
-      <a class="iconbtn" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg></a>
-    </div>
+  <main class="page page-wide">
+    <nav class="site-nav">
+      <a class="logo" href="index.html">finvita</a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html#diagnose">Diagnose</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </nav>
     <h1>Contact</h1>
     <p class="explain">Questions, corrections, or something looks wrong? Reach out at <a href="mailto:hello@finvita.online">hello@finvita.online</a>.</p>
 
@@ -24,5 +32,6 @@
       <a href="disclosure.html">Disclosure</a>
     </footer>
   </main>
+  <script src="js/nav.js" defer></script>
 </body>
 </html>

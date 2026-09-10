@@ -38,13 +38,67 @@ h1 {
   padding: 22px 20px 60px;
 }
 
-/* Top bar */
+/* Top bar (wizard/result back-button pages) */
 .topbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 18px;
 }
+
+/* Site nav (landing + browsing pages: index, blog, about, privacy, contact) */
+.site-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  gap: 2px;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 8px;
+  box-shadow: 0 10px 24px oklch(45% 0.05 258 / 0.14);
+  z-index: 10;
+}
+
+.nav-links.open { display: flex; }
+
+.nav-links a {
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav-links a:hover { background: var(--tile); color: var(--accent); }
+
+.nav-toggle {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.nav-toggle svg { width: 18px; height: 18px; }
 
 .logo {
   font-family: 'Sora', sans-serif;
@@ -158,6 +212,12 @@ h1 {
   box-shadow: 0 6px 18px oklch(45% 0.05 258 / 0.08);
   text-decoration: none;
   color: var(--ink);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px oklch(45% 0.05 258 / 0.16);
 }
 
 .tile {
@@ -359,10 +419,53 @@ h1 {
 .step-title { font-family: 'Sora', sans-serif; font-weight: 600; font-size: 14.5px; margin-bottom: 2px; }
 .step-desc { font-size: 12.5px; color: var(--muted); line-height: 1.45; }
 
-/* FAQ */
-.faq-list { display: flex; flex-direction: column; gap: 16px; }
-.faq-q { font-family: 'Sora', sans-serif; font-weight: 600; font-size: 14px; margin-bottom: 4px; }
-.faq-a { font-size: 13px; color: var(--muted); line-height: 1.55; }
+/* FAQ (native <details> accordion — no JS needed) */
+.faq-list { display: flex; flex-direction: column; gap: 10px; }
+
+.faq-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 4px 18px;
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 14px 0;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.faq-item summary::-webkit-details-marker { display: none; }
+
+.faq-chevron {
+  flex-shrink: 0;
+  color: var(--muted);
+  transition: transform 0.2s ease;
+}
+
+.faq-item[open] .faq-chevron { transform: rotate(90deg); }
+
+.faq-a { font-size: 13px; color: var(--muted); line-height: 1.55; padding: 0 0 16px; }
+
+/* Scroll-reveal (respects reduced motion) */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.in-view { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
 
 /* Site footer */
 .site-footer {
@@ -381,3 +484,28 @@ h1 {
 }
 
 .site-footer a:hover { color: var(--accent); }
+
+/* Desktop overrides — placed last so they win the cascade over the
+   equal-specificity mobile-first rules defined earlier in this file. */
+@media (min-width: 768px) {
+  .page-wide { max-width: 960px; }
+
+  .nav-links {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    gap: 26px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+  .nav-links a { padding: 0; border-radius: 0; }
+  .nav-links a:hover { background: none; }
+
+  .nav-toggle { display: none; }
+
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .step { flex-direction: column; align-items: center; text-align: center; gap: 10px; }
+}

@@ -14,10 +14,18 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <main class="page">
-    <div class="topbar">
-      <div class="logo">finvita</div>
-    </div>
+  <main class="page page-wide">
+    <nav class="site-nav">
+      <a class="logo" href="index.html">finvita</a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html#diagnose">Diagnose</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </nav>
 
     <div class="hero">
       <div class="hero-glow"></div>
@@ -27,91 +35,109 @@
       <a class="hero-cta" href="#diagnose">Start My Diagnosis</a>
     </div>
 
-    <h2 class="section-heading">How it works</h2>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <div>
-          <div class="step-title">Answer a few quick questions</div>
-          <div class="step-desc">Pick where the problem seems to be, then a short multiple-choice path narrows it down.</div>
+    <section class="reveal">
+      <h2 class="section-heading">How it works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div>
+            <div class="step-title">Answer a few quick questions</div>
+            <div class="step-desc">Pick where the problem seems to be, then a short multiple-choice path narrows it down.</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div>
+            <div class="step-title">Get a likely cause</div>
+            <div class="step-desc">A plain-language explanation of what's probably going on and why.</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div>
+            <div class="step-title">See what actually helps</div>
+            <div class="step-desc">Specific products commonly used to fix that exact issue — not a generic shopping list.</div>
+          </div>
         </div>
       </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <div>
-          <div class="step-title">Get a likely cause</div>
-          <div class="step-desc">A plain-language explanation of what's probably going on and why.</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <div>
-          <div class="step-title">See what actually helps</div>
-          <div class="step-desc">Specific products commonly used to fix that exact issue — not a generic shopping list.</div>
-        </div>
-      </div>
-    </div>
+    </section>
 
-    <h2 class="section-heading" id="diagnose">Where's the problem?</h2>
-    <div class="cards">
-      <a class="card" href="diagnose-fish.html">
-        <div class="tile">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><path d="M6 24c6-9 16-13 24-13 6 0 10 4 12 13-2 9-6 13-12 13-8 0-18-4-24-13z"/><path d="M30 24l10-7v14z"/></svg>
-        </div>
-        <div>
-          <div class="card-label">My Fish</div>
-          <div class="card-sub">Symptoms, behavior, illness</div>
-        </div>
-        <div class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></div>
-      </a>
-      <a class="card" href="diagnose-water.html">
-        <div class="tile">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><path d="M24 6c8 10 14 18 14 25a14 14 0 01-28 0c0-7 6-15 14-25z"/></svg>
-        </div>
-        <div>
-          <div class="card-label">My Water</div>
-          <div class="card-sub">Color, clarity, smell</div>
-        </div>
-        <div class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></div>
-      </a>
-      <a class="card" href="diagnose-plants.html">
-        <div class="tile">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><path d="M24 42V22"/><path d="M24 24c0-8-6-12-14-12 0 8 6 12 14 12z"/><path d="M24 20c0-7 6-11 14-11 0 7-6 11-14 11z"/></svg>
-        </div>
-        <div>
-          <div class="card-label">My Plants</div>
-          <div class="card-sub">Leaves, growth, algae</div>
-        </div>
-        <div class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></div>
-      </a>
-    </div>
+    <section class="reveal">
+      <h2 class="section-heading" id="diagnose">Where's the problem?</h2>
+      <div class="cards">
+        <a class="card" href="diagnose-fish.html">
+          <div class="tile">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><path d="M6 24c6-9 16-13 24-13 6 0 10 4 12 13-2 9-6 13-12 13-8 0-18-4-24-13z"/><path d="M30 24l10-7v14z"/></svg>
+          </div>
+          <div>
+            <div class="card-label">My Fish</div>
+            <div class="card-sub">Symptoms, behavior, illness</div>
+          </div>
+          <div class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></div>
+        </a>
+        <a class="card" href="diagnose-water.html">
+          <div class="tile">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><path d="M24 6c8 10 14 18 14 25a14 14 0 01-28 0c0-7 6-15 14-25z"/></svg>
+          </div>
+          <div>
+            <div class="card-label">My Water</div>
+            <div class="card-sub">Color, clarity, smell</div>
+          </div>
+          <div class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></div>
+        </a>
+        <a class="card" href="diagnose-plants.html">
+          <div class="tile">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><path d="M24 42V22"/><path d="M24 24c0-8-6-12-14-12 0 8 6 12 14 12z"/><path d="M24 20c0-7 6-11 14-11 0 7-6 11-14 11z"/></svg>
+          </div>
+          <div>
+            <div class="card-label">My Plants</div>
+            <div class="card-sub">Leaves, growth, algae</div>
+          </div>
+          <div class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></div>
+        </a>
+      </div>
+    </section>
 
-    <h2 class="section-heading">From the blog</h2>
-    <div class="blog-empty">New here — our first posts are on the way. Check back soon.</div>
+    <section class="reveal">
+      <h2 class="section-heading">From the blog</h2>
+      <div class="blog-empty">New here — our first posts are on the way. Check back soon.</div>
+    </section>
 
-    <h2 class="section-heading">Common questions</h2>
-    <div class="faq-list">
-      <div>
-        <div class="faq-q">Is this a substitute for a veterinarian or aquatic specialist?</div>
-        <div class="faq-a">No. Product suggestions reflect common, widely-used options for the issue described, not a professional diagnosis.</div>
+    <section class="reveal">
+      <h2 class="section-heading">Common questions</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Is this a substitute for a veterinarian or aquatic specialist?
+            <svg class="faq-chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
+          </summary>
+          <div class="faq-a">No. Product suggestions reflect common, widely-used options for the issue described, not a professional diagnosis.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Do you get paid for these recommendations?
+            <svg class="faq-chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
+          </summary>
+          <div class="faq-a">Yes — we're an Amazon Associate and earn a commission on qualifying purchases. See our <a href="disclosure.html">disclosure</a> for details.</div>
+        </details>
+        <details class="faq-item">
+          <summary>How accurate is this?
+            <svg class="faq-chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
+          </summary>
+          <div class="faq-a">It matches your answers to the most common cause for that combination of symptoms. Aquariums are full of edge cases, so treat this as a strong starting point, not a certainty.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Why only freshwater tanks?
+            <svg class="faq-chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
+          </summary>
+          <div class="faq-a">Saltwater and pond setups have different common issues and products. We'd rather cover freshwater well than everything shallowly.</div>
+        </details>
+        <details class="faq-item">
+          <summary>What if my symptoms don't match any answer?
+            <svg class="faq-chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
+          </summary>
+          <div class="faq-a">Several paths include a "not sure / something else" option that asks a follow-up question to narrow it down further.</div>
+        </details>
       </div>
-      <div>
-        <div class="faq-q">Do you get paid for these recommendations?</div>
-        <div class="faq-a">Yes — we're an Amazon Associate and earn a commission on qualifying purchases. See our <a href="disclosure.html">disclosure</a> for details.</div>
-      </div>
-      <div>
-        <div class="faq-q">How accurate is this?</div>
-        <div class="faq-a">It matches your answers to the most common cause for that combination of symptoms. Aquariums are full of edge cases, so treat this as a strong starting point, not a certainty.</div>
-      </div>
-      <div>
-        <div class="faq-q">Why only freshwater tanks?</div>
-        <div class="faq-a">Saltwater and pond setups have different common issues and products. We'd rather cover freshwater well than everything shallowly.</div>
-      </div>
-      <div>
-        <div class="faq-q">What if my symptoms don't match any answer?</div>
-        <div class="faq-a">Several paths include a "not sure / something else" option that asks a follow-up question to narrow it down further.</div>
-      </div>
-    </div>
+    </section>
 
     <footer class="site-footer">
       <a href="about.html">About</a>
@@ -120,5 +146,7 @@
       <a href="disclosure.html">Disclosure</a>
     </footer>
   </main>
+  <script src="js/nav.js" defer></script>
+  <script src="js/reveal.js" defer></script>
 </body>
 </html>
