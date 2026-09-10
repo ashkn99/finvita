@@ -1,0 +1,75 @@
+{
+  "start": "fish-entry",
+  "nodes": {
+    "fish-entry": {
+      "text": "What are you noticing with your fish?",
+      "type": "single-choice",
+      "options": [
+        { "label": "Spots, sores, or visible growths on the body", "next": "illness-visible" },
+        { "label": "Acting strangely (hiding, not eating, gasping)", "next": "behavior-root" },
+        { "label": "My fish died or is actively dying", "next": "death-root" },
+        { "label": "Just set up my tank / stocking questions", "next": "newtank-root" }
+      ]
+    },
+    "illness-visible": {
+      "text": "What does it look like?",
+      "type": "single-choice",
+      "options": [
+        { "label": "Small white spots like grains of salt or sugar", "next": "outcome:ich" },
+        { "label": "Ragged, frayed, or disappearing fins", "next": "outcome:fin-rot" },
+        { "label": "Not sure / something else", "next": "illness-visible-followup" }
+      ]
+    },
+    "illness-visible-followup": {
+      "text": "Is your fish also rubbing or scratching itself against rocks or decorations?",
+      "type": "yes-no",
+      "options": [
+        { "label": "Yes", "next": "outcome:ich" },
+        { "label": "No", "next": "outcome:fin-rot" }
+      ]
+    },
+    "behavior-root": {
+      "text": "How is your fish behaving?",
+      "type": "single-choice",
+      "options": [
+        { "label": "Gasping at the surface or breathing rapidly", "next": "outcome:low-oxygen-poor-water" },
+        { "label": "Not eating, hiding, or unusually inactive", "next": "behavior-lethargy-followup" },
+        { "label": "Rubbing or scratching against rocks or decorations", "next": "outcome:ich" },
+        { "label": "Swimming sideways, upside down, or struggling to stay balanced", "next": "outcome:swim-bladder" },
+        { "label": "Aggressive toward other fish", "next": "outcome:aggression-stocking" }
+      ]
+    },
+    "behavior-lethargy-followup": {
+      "text": "Did you set up this tank, or add this fish, less than 4-6 weeks ago?",
+      "type": "yes-no",
+      "options": [
+        { "label": "Yes", "next": "outcome:new-tank-syndrome" },
+        { "label": "No", "next": "outcome:stress-illness-general" }
+      ]
+    },
+    "death-root": {
+      "text": "Is your fish already dead, or still alive but seems close to dying?",
+      "type": "single-choice",
+      "options": [
+        { "label": "Already dead", "next": "death-already-dead-followup" },
+        { "label": "Still alive — gasping, not moving much, or lying on the bottom/side", "next": "outcome:urgent-water-quality" }
+      ]
+    },
+    "death-already-dead-followup": {
+      "text": "Was this tank set up, or did you do a big water change or add new fish, less than 4-6 weeks ago?",
+      "type": "yes-no",
+      "options": [
+        { "label": "Yes", "next": "outcome:new-tank-syndrome" },
+        { "label": "No", "next": "outcome:general-post-mortem" }
+      ]
+    },
+    "newtank-root": {
+      "text": "What's your question?",
+      "type": "single-choice",
+      "options": [
+        { "label": "Is my tank ready / cycled for fish?", "next": "outcome:cycling-tank" },
+        { "label": "Is this fish compatible with what I already have?", "next": "outcome:stocking-compatibility" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "aquarium-health-helper",
+  "private": true,
+  "scripts": {
+    "check": "node check-tree.js",
+    "build": "node build.js",
+    "serve": "node serve.js"
+  }
+}

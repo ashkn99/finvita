@@ -1,0 +1,56 @@
+{
+  "ich-treatment-generic": {
+    "name": "API Super Ick Cure",
+    "amazonAffiliateUrl": "https://www.amazon.com/dp/B0002ASG9K?tag=finvita0b-20",
+    "imageUrl": "",
+    "note": "Common first-line ich treatment."
+  },
+  "aquarium-salt": {
+    "name": "API Aquarium Salt",
+    "amazonAffiliateUrl": "https://www.amazon.com/dp/B0010P82UO?tag=finvita0b-20",
+    "imageUrl": "",
+    "note": "Often used alongside medication for ich."
+  },
+  "quarantine-net-breeder": {
+    "name": "Lee's Net Breeder",
+    "amazonAffiliateUrl": "https://www.amazon.com/dp/B07CPKFBSS?tag=finvita0b-20",
+    "imageUrl": "",
+    "note": "Useful for isolating a sick fish during treatment."
+  },
+  "fin-rot-treatment-generic": {
+    "name": "API Fin and Body Cure",
+    "amazonAffiliateUrl": "https://www.amazon.com/dp/B06XDFJ5XN?tag=finvita0b-20",
+    "imageUrl": "",
+    "note": "Common antibacterial fin rot treatment."
+  },
+  "water-conditioner": {
+    "name": "Seachem Prime Water Conditioner",
+    "amazonAffiliateUrl": "https://www.amazon.com/dp/B010UNMS9M?tag=finvita0b-20",
+    "imageUrl": "",
+    "note": "Improves water quality alongside treatment."
+  },
+  "water-test-kit": {
+    "name": "API Freshwater Master Test Kit",
+    "amazonAffiliateUrl": "https://www.amazon.com/dp/B00K004TNO?tag=finvita0b-20",
+    "imageUrl": "",
+    "note": "Tests ammonia, nitrite, nitrate, and pH — the first step for almost every water-quality issue."
+  },
+  "beneficial-bacteria-starter": {
+    "name": "Seachem Stability",
+    "amazonAffiliateUrl": "https://www.amazon.com/dp/B0002APIIW?tag=finvita0b-20",
+    "imageUrl": "",
+    "note": "Speeds up establishing the bacteria colony a new tank needs."
+  },
+  "air-stone-pump": {
+    "name": "Tetra Whisper Air Pump",
+    "amazonAffiliateUrl": "https://www.amazon.com/dp/B0009YHU6Y?tag=finvita0b-20",
+    "imageUrl": "",
+    "note": "Adds surface agitation and oxygen during a water-quality emergency."
+  },
+  "aquarium-decor-hiding-spots": {
+    "name": "Plecoceramics Aquarium Cave",
+    "amazonAffiliateUrl": "https://www.amazon.com/dp/B07TJZRG1Z?tag=finvita0b-20",
+    "imageUrl": "",
+    "note": "Breaks sightlines and gives weaker fish somewhere to retreat from aggressive tankmates."
+  }
+}

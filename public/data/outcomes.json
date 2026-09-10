@@ -1,0 +1,68 @@
+{
+  "ich": {
+    "title": "Ich (White Spot Disease)",
+    "explanation": "Small white spots resembling salt or sugar grains, often paired with fish rubbing against rocks or decorations, are the classic sign of ich — one of the most common freshwater fish parasites. It spreads quickly to other fish in the tank, so treat the whole tank, not just the affected fish.",
+    "confidence": "likely",
+    "productIds": ["ich-treatment-generic", "aquarium-salt", "quarantine-net-breeder"]
+  },
+  "fin-rot": {
+    "title": "Fin Rot",
+    "explanation": "Ragged, frayed, or disappearing fin edges — sometimes with a white or red tinge — usually point to fin rot, a bacterial infection that takes hold when water quality is poor or a fish is stressed. Improving water quality alongside treatment gives the best results.",
+    "confidence": "likely",
+    "productIds": ["fin-rot-treatment-generic", "water-conditioner"]
+  },
+  "low-oxygen-poor-water": {
+    "title": "Low Oxygen or Poor Water Quality",
+    "explanation": "Gasping at the surface or rapid gill movement almost always points to a lack of dissolved oxygen or a water quality problem, often ammonia or nitrite. Test your water immediately and improve surface agitation or aeration.",
+    "confidence": "likely",
+    "productIds": ["air-stone-pump", "water-test-kit", "water-conditioner"]
+  },
+  "swim-bladder": {
+    "title": "Swim Bladder Disorder",
+    "explanation": "Trouble staying balanced — floating, sinking, swimming sideways or upside down — usually points to swim bladder disorder. It's often caused by overfeeding or constipation and frequently resolves with a few days of fasting, though poor water quality can also be a contributing factor worth ruling out.",
+    "confidence": "possible",
+    "productIds": ["water-test-kit"]
+  },
+  "aggression-stocking": {
+    "title": "Aggression / Stocking Issue",
+    "explanation": "Ongoing aggression toward tankmates is usually a stocking problem — not enough space, incompatible species, or not enough hiding spots and broken sightlines for weaker fish to retreat to.",
+    "confidence": "likely",
+    "productIds": ["aquarium-decor-hiding-spots"]
+  },
+  "new-tank-syndrome": {
+    "title": "New Tank Syndrome",
+    "explanation": "In a tank that's less than 4-6 weeks old, an ammonia or nitrite spike (\"new tank syndrome\") is the most common cause of fish dying or acting sick. The tank's beneficial bacteria hasn't built up enough yet to process fish waste.",
+    "confidence": "likely",
+    "productIds": ["water-test-kit", "beneficial-bacteria-starter", "water-conditioner"]
+  },
+  "stress-illness-general": {
+    "title": "Stress or Early Illness",
+    "explanation": "In an established tank, prolonged hiding or loss of appetite is usually stress or the early stage of an illness that hasn't shown visible symptoms yet. Test your water first to rule out a quality issue, and keep a close eye out for any visible symptoms developing.",
+    "confidence": "possible",
+    "productIds": ["water-test-kit", "water-conditioner"]
+  },
+  "urgent-water-quality": {
+    "title": "Urgent: Check Your Water Now",
+    "explanation": "A fish that's gasping, not moving, or lying on the bottom or side is a medical emergency and is very often caused by an acute water quality problem: ammonia, nitrite, or an oxygen crash. Test your water immediately and do a partial water change if anything is off.",
+    "confidence": "likely",
+    "productIds": ["water-test-kit", "air-stone-pump", "water-conditioner"]
+  },
+  "general-post-mortem": {
+    "title": "After Fish Loss: What to Check",
+    "explanation": "In an established, stable tank, occasional fish loss can happen from old age or causes that aren't preventable. Still, it's worth testing your water before adding new fish, since a hidden water quality issue can silently affect the rest of your tank.",
+    "confidence": null,
+    "productIds": ["water-test-kit"]
+  },
+  "cycling-tank": {
+    "title": "Cycling a New Tank",
+    "explanation": "A new tank needs several weeks to build up the beneficial bacteria that break down fish waste before it's safe to stock at normal levels. Test regularly for ammonia and nitrite, and add fish gradually.",
+    "confidence": "likely",
+    "productIds": ["water-test-kit", "beneficial-bacteria-starter"]
+  },
+  "stocking-compatibility": {
+    "title": "Checking Fish Compatibility",
+    "explanation": "Compatibility depends on adult size, temperament, water parameter needs, and tank size — there's no single answer that covers every species pairing. Look up your specific fish species against your tank size, or ask in an aquarium community with your exact stocking list.",
+    "confidence": null,
+    "productIds": []
+  }
+}
