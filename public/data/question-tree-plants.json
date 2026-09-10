@@ -1,0 +1,24 @@
+{
+  "start": "plants-entry",
+  "nodes": {
+    "plants-entry": {
+      "text": "What are you noticing with your plants?",
+      "type": "single-choice",
+      "options": [
+        { "label": "Yellowing leaves", "next": "outcome:nutrient-deficiency-yellowing" },
+        { "label": "Leaves melting or turning brown/mushy", "next": "plants-melting-followup" },
+        { "label": "Algae growing directly on the leaves", "next": "outcome:algae-on-plants" },
+        { "label": "Holes or see-through patches in leaves", "next": "outcome:potassium-deficiency" },
+        { "label": "Not growing / stunted", "next": "outcome:low-light-co2-limited" }
+      ]
+    },
+    "plants-melting-followup": {
+      "text": "Did you just add this plant to your tank in the last couple of weeks?",
+      "type": "yes-no",
+      "options": [
+        { "label": "Yes", "next": "outcome:transition-melt" },
+        { "label": "No", "next": "outcome:nutrient-deficiency-yellowing" }
+      ]
+    }
+  }
+}

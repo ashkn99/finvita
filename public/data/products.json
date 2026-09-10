@@ -52,5 +52,29 @@
     "amazonAffiliateUrl": "https://www.amazon.com/dp/B07TJZRG1Z?tag=finvita0b-20",
     "imageUrl": "",
     "note": "Breaks sightlines and gives weaker fish somewhere to retreat from aggressive tankmates."
+  },
+  "algae-control-treatment": {
+    "name": "API AlgaeFix",
+    "amazonAffiliateUrl": "https://www.amazon.com/dp/B003SNDNQ4?tag=finvita0b-20",
+    "imageUrl": "",
+    "note": "Controls green water and other algae blooms in freshwater aquariums."
+  },
+  "activated-carbon-filter-media": {
+    "name": "Activated Carbon Filter Media",
+    "amazonAffiliateUrl": "https://www.amazon.com/dp/B01GN7ZQ70?tag=finvita0b-20",
+    "imageUrl": "",
+    "note": "Removes tannins, odors, and discoloration from aquarium water."
+  },
+  "liquid-plant-fertilizer": {
+    "name": "Seachem Flourish",
+    "amazonAffiliateUrl": "https://www.amazon.com/dp/B000255QJS?tag=finvita0b-20",
+    "imageUrl": "",
+    "note": "Comprehensive freshwater plant supplement to correct nutrient deficiencies."
+  },
+  "aquarium-plant-light": {
+    "name": "NICREW Full Spectrum Planted LED Light",
+    "amazonAffiliateUrl": "https://www.amazon.com/dp/B08SBPVXCW?tag=finvita0b-20",
+    "imageUrl": "",
+    "note": "Provides the light intensity most live plants need to grow well."
   }
 }

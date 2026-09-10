@@ -1,14 +1,15 @@
-// Generic tree-driven wizard: walks data/question-tree.json from `start`,
-// tracking answer history so the back button works. Not fish-specific —
-// pointing this at a different tree file drives the same UI for Water/Plants later.
+// Generic tree-driven wizard: walks data/<body data-tree>.json from `start`,
+// tracking answer history so the back button works. Same script drives
+// Fish/Water/Plants — each page just sets a different data-tree attribute.
 (async function () {
   const questionText = document.getElementById('question-text');
   const optionsContainer = document.getElementById('options-container');
   const backButton = document.getElementById('back-button');
 
+  const treeFile = document.body.dataset.tree;
   let tree;
   try {
-    const res = await fetch('data/question-tree.json');
+    const res = await fetch(`data/${treeFile}`);
     tree = await res.json();
   } catch (err) {
     questionText.textContent = 'Could not load the question data.';

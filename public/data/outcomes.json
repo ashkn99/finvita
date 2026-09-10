@@ -64,5 +64,71 @@
     "explanation": "Compatibility depends on adult size, temperament, water parameter needs, and tank size — there's no single answer that covers every species pairing. Look up your specific fish species against your tank size, or ask in an aquarium community with your exact stocking list.",
     "confidence": null,
     "productIds": []
+  },
+  "cloudy-water-bacterial-bloom": {
+    "title": "Bacterial Bloom (Cloudy Water)",
+    "explanation": "White or gray haze is usually a bacterial bloom — a sudden spike in the bacteria that feed on excess waste or uneaten food, common in new tanks or after overfeeding. It typically clears on its own within a few days; testing your water rules out a bigger issue in the meantime.",
+    "confidence": "likely",
+    "productIds": ["water-test-kit", "beneficial-bacteria-starter"]
+  },
+  "green-water-algae": {
+    "title": "Green Water (Algae Bloom)",
+    "explanation": "Green, pea-soup-colored water is a free-floating algae bloom, almost always caused by too much light (duration or intensity) combined with excess nutrients. Cutting back light hours helps prevent it from returning, alongside a direct algae treatment.",
+    "confidence": "likely",
+    "productIds": ["algae-control-treatment", "water-test-kit"]
+  },
+  "tannin-discoloration": {
+    "title": "Tannins (Brown/Tea-Colored Water)",
+    "explanation": "Brown or tea-colored water is usually tannins leaching from driftwood or dried leaves — cosmetic, not harmful, and often intentional in some setups. Activated carbon in your filter will clear it up if you'd rather have clear water.",
+    "confidence": "likely",
+    "productIds": ["activated-carbon-filter-media"]
+  },
+  "protein-foam": {
+    "title": "Protein Foam / Surface Bubbles",
+    "explanation": "Foam or bubbles on the surface usually come from a buildup of dissolved proteins, often linked to overfeeding or waste. A partial water change plus more surface agitation clears it, and cutting back feeding slightly helps prevent it from returning.",
+    "confidence": "likely",
+    "productIds": ["water-conditioner", "air-stone-pump"]
+  },
+  "smelly-water": {
+    "title": "Bad-Smelling Water",
+    "explanation": "A bad smell almost always means decaying organic matter — uneaten food, dead plant material, or something (or someone) hidden in the decor — or a bacterial imbalance. Do a partial water change, check for anything decaying, and test your water to see if ammonia is elevated.",
+    "confidence": "likely",
+    "productIds": ["water-test-kit", "water-conditioner"]
+  },
+  "established-tank-ammonia-spike": {
+    "title": "Ammonia Spike in an Established Tank",
+    "explanation": "In a tank that's been running a while, a sudden ammonia or nitrite spike usually means overstocking, overfeeding, a dead fish or plant matter decaying somewhere, or filter media that lost its bacteria (often from rinsing it in tap water). Find and remove the source, then support the bacteria colony while it recovers.",
+    "confidence": "likely",
+    "productIds": ["water-test-kit", "beneficial-bacteria-starter", "water-conditioner"]
+  },
+  "nutrient-deficiency-yellowing": {
+    "title": "Nutrient Deficiency (Yellowing Leaves)",
+    "explanation": "Yellowing leaves usually mean your plants are running low on nitrogen or iron — common in tanks without regular fertilizing. A liquid plant fertilizer replaces what the water column alone doesn't provide.",
+    "confidence": "likely",
+    "productIds": ["liquid-plant-fertilizer"]
+  },
+  "algae-on-plants": {
+    "title": "Algae Growing on Plant Leaves",
+    "explanation": "Algae growing directly on leaves points to a light/nutrient imbalance — usually too much light for the nutrients available, letting algae outcompete the plant for what's there. Reducing light duration alongside an algae treatment usually clears it.",
+    "confidence": "likely",
+    "productIds": ["algae-control-treatment"]
+  },
+  "potassium-deficiency": {
+    "title": "Potassium or Micronutrient Deficiency",
+    "explanation": "Holes or see-through patches in otherwise healthy-looking leaves usually point to a potassium or micronutrient deficiency rather than disease or pests. A comprehensive liquid fertilizer typically resolves it within a couple of weeks.",
+    "confidence": "possible",
+    "productIds": ["liquid-plant-fertilizer"]
+  },
+  "low-light-co2-limited": {
+    "title": "Limited Light or CO2",
+    "explanation": "Plants that stay small or barely grow are usually light-limited — many live plants need more intensity or duration than a basic starter light provides. A dedicated full-spectrum plant light is the most common fix.",
+    "confidence": "possible",
+    "productIds": ["aquarium-plant-light"]
+  },
+  "transition-melt": {
+    "title": "Transition Melt (Normal)",
+    "explanation": "New aquatic plants often shed the leaves they grew before purchase (frequently grown emersed, out of water) as they adjust to underwater growth. This \"melt\" is normal and temporary — keep the water quality stable and new growth should appear within a few weeks.",
+    "confidence": null,
+    "productIds": []
   }
 }

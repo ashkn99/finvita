@@ -1,0 +1,25 @@
+{
+  "start": "water-entry",
+  "nodes": {
+    "water-entry": {
+      "text": "What's going on with your water?",
+      "type": "single-choice",
+      "options": [
+        { "label": "Cloudy or hazy (white/gray)", "next": "outcome:cloudy-water-bacterial-bloom" },
+        { "label": "Green", "next": "outcome:green-water-algae" },
+        { "label": "Brown or tea-colored", "next": "outcome:tannin-discoloration" },
+        { "label": "Foamy or bubbly on the surface", "next": "outcome:protein-foam" },
+        { "label": "Bad smell", "next": "outcome:smelly-water" },
+        { "label": "I tested and ammonia or nitrite is high", "next": "water-ammonia-followup" }
+      ]
+    },
+    "water-ammonia-followup": {
+      "text": "Did you set up this tank, or rinse your filter media in tap water, less than 4-6 weeks ago?",
+      "type": "yes-no",
+      "options": [
+        { "label": "Yes", "next": "outcome:new-tank-syndrome" },
+        { "label": "No", "next": "outcome:established-tank-ammonia-spike" }
+      ]
+    }
+  }
+}
