@@ -5,6 +5,7 @@
   const questionText = document.getElementById('question-text');
   const optionsContainer = document.getElementById('options-container');
   const backButton = document.getElementById('back-button');
+  const progressEl = document.getElementById('wizard-progress');
 
   const treeFile = document.body.dataset.tree;
   let tree;
@@ -31,6 +32,14 @@
       optionsContainer.appendChild(button);
     });
     backButton.disabled = history.length === 0;
+    progressEl.textContent = `Question ${history.length + 1}`;
+
+    // Re-trigger the entrance animation on every question change, not just page load.
+    [progressEl, questionText, optionsContainer].forEach((el) => {
+      el.classList.remove('q-enter');
+      void el.offsetWidth;
+      el.classList.add('q-enter');
+    });
   }
 
   function handleAnswer(next) {

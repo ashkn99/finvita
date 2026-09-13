@@ -52,7 +52,7 @@
       "type": "single-choice",
       "options": [
         { "label": "Already dead", "next": "death-already-dead-followup" },
-        { "label": "Still alive — gasping, not moving much, or lying on the bottom/side", "next": "outcome:urgent-water-quality" }
+        { "label": "Still alive (gasping, not moving much, or lying on the bottom/side)", "next": "outcome:urgent-water-quality" }
       ]
     },
     "death-already-dead-followup": {

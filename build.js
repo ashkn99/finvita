@@ -23,7 +23,7 @@ function escapeHtml(str) {
 function productCardHtml(product) {
   return `
       <li class="pcard">
-        <div class="pimg"></div>
+        <div class="pimg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7L12 3 4 7m16 0l-8 4m8-4v10l-8 4M4 7l8 4M4 7v10l8 4m0-10v10"/></svg></div>
         <div>
           <div class="pname">${escapeHtml(product.name)}</div>
           <div class="pnote">${escapeHtml(product.note)}</div>
@@ -38,6 +38,7 @@ function productsSectionHtml(outcome, products) {
   if (!outcome.productIds || outcome.productIds.length === 0) return '';
   const cards = outcome.productIds.map((id) => productCardHtml(products[id])).join('\n');
   return `
+    <h2 class="products-heading">What helps</h2>
     <ul class="product-list">${cards}
     </ul>
     <p class="disclosure">As an Amazon Associate, we earn from qualifying purchases made through the links above. See our <a href="../disclosure.html">disclosure</a> for details.</p>`;
