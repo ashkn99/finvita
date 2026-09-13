@@ -29,73 +29,67 @@
     </nav>
 
     <div class="hero" id="main-content">
-      <div class="hero-glow"></div>
-      <div class="hero-badge">Quick diagnosis</div>
-      <h1>What's worrying you today?</h1>
-      <p>Answer a few quick questions and we'll help figure out what's going on, then point you to what actually helps.</p>
-      <a class="hero-cta" href="#diagnose">Start My Diagnosis</a>
+      <div class="hero-copy">
+        <div class="kicker">For freshwater tanks</div>
+        <h1>Something's off, and the forums all disagree.</h1>
+        <p>Cloudy water, a sick fish, algae that won't quit — every thread says something different. We ask a few questions, narrow it to the most likely cause, and point you to what actually fixes it.</p>
+        <a class="hero-cta" href="#diagnose">Start My Diagnosis</a>
+      </div>
     </div>
 
     <section class="reveal">
-      <h2 class="section-heading">How it works</h2>
-      <div class="steps">
-        <div class="step">
-          <div class="step-num">1</div>
-          <div>
-            <div class="step-title">Answer a few quick questions</div>
-            <div class="step-desc">Pick where the problem seems to be, then a short multiple-choice path narrows it down.</div>
+      <h2 class="eyebrow-label" id="how-it-works">How it works</h2>
+      <div class="flow">
+        <div class="flow-steps">
+          <svg class="flow-track" viewBox="0 0 100 8" preserveAspectRatio="none" aria-hidden="true">
+            <path class="flow-track-bg" d="M16,4 L84,4" pathLength="100"/>
+            <path class="flow-track-fg" d="M16,4 L84,4" pathLength="100"/>
+          </svg>
+          <div class="flow-step">
+            <div class="flow-num">1</div>
+            <div class="flow-title">Answer a few questions</div>
+            <div class="flow-desc">Pick where the problem is, then a short path narrows it down.</div>
           </div>
-        </div>
-        <div class="step">
-          <div class="step-num">2</div>
-          <div>
-            <div class="step-title">Get a likely cause</div>
-            <div class="step-desc">A plain-language explanation of what's probably going on and why.</div>
+          <div class="flow-step">
+            <div class="flow-num">2</div>
+            <div class="flow-title">Get a likely cause</div>
+            <div class="flow-desc">A plain-language explanation of what's probably going on.</div>
           </div>
-        </div>
-        <div class="step">
-          <div class="step-num">3</div>
-          <div>
-            <div class="step-title">See what actually helps</div>
-            <div class="step-desc">Specific products commonly used to fix that exact issue, not a generic shopping list.</div>
+          <div class="flow-step">
+            <div class="flow-num">3</div>
+            <div class="flow-title">See what helps</div>
+            <div class="flow-desc">Specific products used to fix that exact issue.</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="reveal">
-      <h2 class="section-heading" id="diagnose">Where's the problem?</h2>
-      <div class="cards">
-        <a class="card" href="diagnose-fish.html">
+    <section class="reveal" id="diagnose">
+      <div class="kicker">Where's the problem?</div>
+      <h2 class="doors-heading">What's worrying you today?</h2>
+      <div class="doors">
+        <a class="door" href="diagnose-fish.html">
           <div class="tile">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M6 24c6-9 16-13 24-13 6 0 10 4 12 13-2 9-6 13-12 13-8 0-18-4-24-13z"/><path d="M30 24l10-7v14z"/></svg>
           </div>
-          <div>
-            <div class="card-label">My Fish</div>
-            <div class="card-sub">Symptoms, behavior, illness</div>
-          </div>
-          <div class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></div>
+          <div><strong>My Fish</strong><span>Symptoms, behavior, illness</span></div>
         </a>
-        <a class="card" href="diagnose-water.html">
+        <a class="door" href="diagnose-water.html">
           <div class="tile">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M24 6c8 10 14 18 14 25a14 14 0 01-28 0c0-7 6-15 14-25z"/></svg>
           </div>
-          <div>
-            <div class="card-label">My Water</div>
-            <div class="card-sub">Color, clarity, smell</div>
-          </div>
-          <div class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></div>
+          <div><strong>My Water</strong><span>Color, clarity, smell</span></div>
         </a>
-        <a class="card" href="diagnose-plants.html">
+        <a class="door" href="diagnose-plants.html">
           <div class="tile">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M24 42V22"/><path d="M24 24c0-8-6-12-14-12 0 8 6 12 14 12z"/><path d="M24 20c0-7 6-11 14-11 0 7-6 11-14 11z"/></svg>
           </div>
-          <div>
-            <div class="card-label">My Plants</div>
-            <div class="card-sub">Leaves, growth, algae</div>
-          </div>
-          <div class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></div>
+          <div><strong>My Plants</strong><span>Leaves, growth, algae</span></div>
         </a>
+      </div>
+      <div class="footline">
+        <span><b>3</b> questions to a likely cause, on average</span>
+        <span>Not sure? Every path has a <b>"something else"</b> option</span>
       </div>
     </section>
 
