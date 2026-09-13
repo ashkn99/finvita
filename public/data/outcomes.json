@@ -1,13 +1,13 @@
 {
   "ich": {
     "title": "Ich (White Spot Disease)",
-    "explanation": "Small white spots resembling salt or sugar grains, often paired with fish rubbing against rocks or decorations, are the classic sign of ich, one of the most common freshwater fish parasites. It spreads quickly to other fish in the tank, so treat the whole tank, not just the affected fish.",
+    "explanation": "Small white spots resembling salt or sugar grains, often paired with fish rubbing against rocks or decorations, are the classic sign of ich — one of the most common freshwater fish parasites. It spreads quickly to other fish in the tank, so treat the whole tank, not just the affected fish.",
     "confidence": "likely",
     "productIds": ["ich-treatment-generic", "aquarium-salt", "quarantine-net-breeder"]
   },
   "fin-rot": {
     "title": "Fin Rot",
-    "explanation": "Ragged, frayed, or disappearing fin edges, sometimes with a white or red tinge, usually point to fin rot, a bacterial infection that takes hold when water quality is poor or a fish is stressed. Improving water quality alongside treatment gives the best results.",
+    "explanation": "Ragged, frayed, or disappearing fin edges — sometimes with a white or red tinge — usually point to fin rot, a bacterial infection that takes hold when water quality is poor or a fish is stressed. Improving water quality alongside treatment gives the best results.",
     "confidence": "likely",
     "productIds": ["fin-rot-treatment-generic", "water-conditioner"]
   },
@@ -19,13 +19,13 @@
   },
   "swim-bladder": {
     "title": "Swim Bladder Disorder",
-    "explanation": "Trouble staying balanced (floating, sinking, swimming sideways or upside down) usually points to swim bladder disorder. It's often caused by overfeeding or constipation and frequently resolves with a few days of fasting, though poor water quality can also be a contributing factor worth ruling out.",
+    "explanation": "Trouble staying balanced — floating, sinking, swimming sideways or upside down — usually points to swim bladder disorder. It's often caused by overfeeding or constipation and frequently resolves with a few days of fasting, though poor water quality can also be a contributing factor worth ruling out.",
     "confidence": "possible",
     "productIds": ["water-test-kit"]
   },
   "aggression-stocking": {
     "title": "Aggression / Stocking Issue",
-    "explanation": "Ongoing aggression toward tankmates is usually a stocking problem: not enough space, incompatible species, or not enough hiding spots and broken sightlines for weaker fish to retreat to.",
+    "explanation": "Ongoing aggression toward tankmates is usually a stocking problem — not enough space, incompatible species, or not enough hiding spots and broken sightlines for weaker fish to retreat to.",
     "confidence": "likely",
     "productIds": ["aquarium-decor-hiding-spots"]
   },
@@ -61,13 +61,13 @@
   },
   "stocking-compatibility": {
     "title": "Checking Fish Compatibility",
-    "explanation": "Compatibility depends on adult size, temperament, water parameter needs, and tank size. There's no single answer that covers every species pairing. Look up your specific fish species against your tank size, or ask in an aquarium community with your exact stocking list.",
+    "explanation": "Compatibility depends on adult size, temperament, water parameter needs, and tank size — there's no single answer that covers every species pairing. Look up your specific fish species against your tank size, or ask in an aquarium community with your exact stocking list.",
     "confidence": null,
     "productIds": []
   },
   "cloudy-water-bacterial-bloom": {
     "title": "Bacterial Bloom (Cloudy Water)",
-    "explanation": "White or gray haze is usually a bacterial bloom, a sudden spike in the bacteria that feed on excess waste or uneaten food, common in new tanks or after overfeeding. It typically clears on its own within a few days; testing your water rules out a bigger issue in the meantime.",
+    "explanation": "White or gray haze is usually a bacterial bloom — a sudden spike in the bacteria that feed on excess waste or uneaten food, common in new tanks or after overfeeding. It typically clears on its own within a few days; testing your water rules out a bigger issue in the meantime.",
     "confidence": "likely",
     "productIds": ["water-test-kit", "beneficial-bacteria-starter"]
   },
@@ -79,7 +79,7 @@
   },
   "tannin-discoloration": {
     "title": "Tannins (Brown/Tea-Colored Water)",
-    "explanation": "Brown or tea-colored water is usually tannins leaching from driftwood or dried leaves, cosmetic, not harmful, and often intentional in some setups. Activated carbon in your filter will clear it up if you'd rather have clear water.",
+    "explanation": "Brown or tea-colored water is usually tannins leaching from driftwood or dried leaves — cosmetic, not harmful, and often intentional in some setups. Activated carbon in your filter will clear it up if you'd rather have clear water.",
     "confidence": "likely",
     "productIds": ["activated-carbon-filter-media"]
   },
@@ -91,7 +91,7 @@
   },
   "smelly-water": {
     "title": "Bad-Smelling Water",
-    "explanation": "A bad smell almost always means decaying organic matter, such as uneaten food, dead plant material, or something (or someone) hidden in the decor, or a bacterial imbalance. Do a partial water change, check for anything decaying, and test your water to see if ammonia is elevated.",
+    "explanation": "A bad smell almost always means decaying organic matter — uneaten food, dead plant material, or something (or someone) hidden in the decor — or a bacterial imbalance. Do a partial water change, check for anything decaying, and test your water to see if ammonia is elevated.",
     "confidence": "likely",
     "productIds": ["water-test-kit", "water-conditioner"]
   },
@@ -103,13 +103,13 @@
   },
   "nutrient-deficiency-yellowing": {
     "title": "Nutrient Deficiency (Yellowing Leaves)",
-    "explanation": "Yellowing leaves usually mean your plants are running low on nitrogen or iron, common in tanks without regular fertilizing. A liquid plant fertilizer replaces what the water column alone doesn't provide.",
+    "explanation": "Yellowing leaves usually mean your plants are running low on nitrogen or iron — common in tanks without regular fertilizing. A liquid plant fertilizer replaces what the water column alone doesn't provide.",
     "confidence": "likely",
     "productIds": ["liquid-plant-fertilizer"]
   },
   "algae-on-plants": {
     "title": "Algae Growing on Plant Leaves",
-    "explanation": "Algae growing directly on leaves points to a light/nutrient imbalance, usually too much light for the nutrients available, letting algae outcompete the plant for what's there. Reducing light duration alongside an algae treatment usually clears it.",
+    "explanation": "Algae growing directly on leaves points to a light/nutrient imbalance — usually too much light for the nutrients available, letting algae outcompete the plant for what's there. Reducing light duration alongside an algae treatment usually clears it.",
     "confidence": "likely",
     "productIds": ["algae-control-treatment"]
   },
@@ -121,13 +121,13 @@
   },
   "low-light-co2-limited": {
     "title": "Limited Light or CO2",
-    "explanation": "Plants that stay small or barely grow are usually light-limited: many live plants need more intensity or duration than a basic starter light provides. A dedicated full-spectrum plant light is the most common fix.",
+    "explanation": "Plants that stay small or barely grow are usually light-limited — many live plants need more intensity or duration than a basic starter light provides. A dedicated full-spectrum plant light is the most common fix.",
     "confidence": "possible",
     "productIds": ["aquarium-plant-light"]
   },
   "transition-melt": {
     "title": "Transition Melt (Normal)",
-    "explanation": "New aquatic plants often shed the leaves they grew before purchase (frequently grown emersed, out of water) as they adjust to underwater growth. This \"melt\" is normal and temporary. Keep the water quality stable and new growth should appear within a few weeks.",
+    "explanation": "New aquatic plants often shed the leaves they grew before purchase (frequently grown emersed, out of water) as they adjust to underwater growth. This \"melt\" is normal and temporary — keep the water quality stable and new growth should appear within a few weeks.",
     "confidence": null,
     "productIds": []
   }
