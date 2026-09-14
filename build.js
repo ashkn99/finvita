@@ -69,9 +69,9 @@ function stepsSectionHtml(outcome) {
     </ol>`;
 }
 
-function faqSectionHtml(outcome) {
-  if (!outcome.faq || outcome.faq.length === 0) return '';
-  const items = outcome.faq.map((f) => `
+function faqSectionHtml(faq) {
+  if (!faq || faq.length === 0) return '';
+  const items = faq.map((f) => `
       <details class="faq-item">
         <summary>${escapeHtml(f.q)}
           <svg class="faq-chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
@@ -88,21 +88,29 @@ function jsonLdScript(data) {
   return `<script type="application/ld+json">${JSON.stringify(data).replace(/</g, '\\u003c')}</script>`;
 }
 
-function jsonldSectionHtml(outcome, canonicalUrl) {
+function jsonldSectionHtml({ title, faq, canonicalUrl, type }) {
   const scripts = [];
   scripts.push(jsonLdScript({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL + '/' },
-      { '@type': 'ListItem', position: 2, name: outcome.title, item: canonicalUrl },
+      { '@type': 'ListItem', position: 2, name: title, item: canonicalUrl },
     ],
   }));
-  if (outcome.faq && outcome.faq.length > 0) {
+  if (type) {
+    scripts.push(jsonLdScript({
+      '@context': 'https://schema.org',
+      '@type': type,
+      headline: title,
+      url: canonicalUrl,
+    }));
+  }
+  if (faq && faq.length > 0) {
     scripts.push(jsonLdScript({
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      mainEntity: outcome.faq.map((f) => ({
+      mainEntity: faq.map((f) => ({
         '@type': 'Question',
         name: f.q,
         acceptedAnswer: { '@type': 'Answer', text: f.a },
@@ -130,27 +138,90 @@ function main() {
       .replace('{{CAUSES_SECTION}}', causesSectionHtml(outcome))
       .replace('{{STEPS_SECTION}}', stepsSectionHtml(outcome))
       .replace('{{PRODUCTS_SECTION}}', productsSectionHtml(outcome, products))
-      .replace('{{FAQ_SECTION}}', faqSectionHtml(outcome))
-      .replace('{{JSONLD_SECTION}}', jsonldSectionHtml(outcome, canonicalUrl));
+      .replace('{{FAQ_SECTION}}', faqSectionHtml(outcome.faq))
+      .replace('{{JSONLD_SECTION}}', jsonldSectionHtml({ title: outcome.title, faq: outcome.faq, canonicalUrl }));
     fs.writeFileSync(path.join(outDir, `${slug}.html`), html);
   }
   console.log(`Built ${Object.keys(outcomes).length} result page(s) into public/results/`);
 
-  buildSitemap(outcomes);
+  const blogPosts = buildBlogPosts();
+  buildBlogIndex(blogPosts);
+  updateHomepageBlogSection(blogPosts);
+  buildSitemap(outcomes, blogPosts);
 }
 
-function buildSitemap(outcomes) {
+function formatDate(iso) {
+  return new Date(iso + 'T00:00:00Z').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+}
+
+function buildBlogPosts() {
+  const posts = loadJson('blog-posts.json');
+  const template = fs.readFileSync(path.join(__dirname, 'templates', 'blog-post-template.html'), 'utf8');
+  const outDir = path.join(__dirname, 'public', 'blog');
+  fs.mkdirSync(outDir, { recursive: true });
+
+  const entries = Object.entries(posts).sort((a, b) => b[1].publishedDate.localeCompare(a[1].publishedDate));
+  for (const [slug, post] of entries) {
+    const canonicalUrl = `${SITE_URL}/blog/${slug}.html`;
+    const bodyHtml = fs.readFileSync(path.join(__dirname, 'content', 'blog', `${slug}.html`), 'utf8');
+    const html = template
+      .replace(/{{TITLE}}/g, escapeHtml(post.title))
+      .replace(/{{META_DESCRIPTION}}/g, escapeHtml(post.metaDescription))
+      .replace(/{{CANONICAL_URL}}/g, canonicalUrl)
+      .replace('{{PUBLISHED_DATE_DISPLAY}}', formatDate(post.publishedDate))
+      .replace('{{BODY_HTML}}', bodyHtml)
+      .replace('{{FAQ_SECTION}}', faqSectionHtml(post.faq))
+      .replace('{{JSONLD_SECTION}}', jsonldSectionHtml({ title: post.title, faq: post.faq, canonicalUrl, type: 'BlogPosting' }));
+    fs.writeFileSync(path.join(outDir, `${slug}.html`), html);
+  }
+  console.log(`Built ${entries.length} blog post(s) into public/blog/`);
+  return entries.map(([slug, post]) => ({ slug, ...post }));
+}
+
+function blogCardHtml(post) {
+  return `
+      <div class="blog-card">
+        <p class="kicker">${escapeHtml(formatDate(post.publishedDate))}</p>
+        <h3><a href="blog/${post.slug}.html">${escapeHtml(post.title)}</a></h3>
+        <p>${escapeHtml(post.metaDescription)}</p>
+      </div>`;
+}
+
+function buildBlogIndex(blogPosts) {
+  const template = fs.readFileSync(path.join(__dirname, 'templates', 'blog-index-template.html'), 'utf8');
+  const cards = blogPosts.map(blogCardHtml).join('\n');
+  const html = template.replace('{{POST_LIST}}', cards);
+  fs.writeFileSync(path.join(__dirname, 'public', 'blog.html'), html);
+  console.log(`Built public/blog.html with ${blogPosts.length} post(s).`);
+}
+
+function updateHomepageBlogSection(blogPosts) {
+  const indexPath = path.join(__dirname, 'public', 'index.html');
+  let html = fs.readFileSync(indexPath, 'utf8');
+  const cards = blogPosts.slice(0, 3).map((post) => `
+      <div class="blog-card">
+        <p class="kicker">${escapeHtml(formatDate(post.publishedDate))}</p>
+        <h3><a href="blog/${post.slug}.html">${escapeHtml(post.title)}</a></h3>
+        <p>${escapeHtml(post.metaDescription)}</p>
+      </div>`).join('\n');
+  const replacement = `<!-- BLOG_SECTION_START -->\n      <div class="blog-list">${cards}\n      </div>\n      <!-- BLOG_SECTION_END -->`;
+  html = html.replace(/<!-- BLOG_SECTION_START -->[\s\S]*?<!-- BLOG_SECTION_END -->/, replacement);
+  fs.writeFileSync(indexPath, html);
+}
+
+function buildSitemap(outcomes, blogPosts) {
   const staticPages = [
     '/', '/diagnose-fish.html', '/diagnose-water.html', '/diagnose-plants.html',
     '/about.html', '/privacy.html', '/contact.html', '/blog.html',
   ];
   const resultPages = Object.keys(outcomes).map((slug) => `/results/${slug}.html`);
-  const urls = [...staticPages, ...resultPages]
+  const blogPages = blogPosts.map((post) => `/blog/${post.slug}.html`);
+  const urls = [...staticPages, ...resultPages, ...blogPages]
     .map((p) => `  <url><loc>${SITE_URL}${p}</loc></url>`)
     .join('\n');
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
   fs.writeFileSync(path.join(__dirname, 'public', 'sitemap.xml'), xml);
-  console.log(`Built sitemap.xml with ${staticPages.length + resultPages.length} URL(s).`);
+  console.log(`Built sitemap.xml with ${staticPages.length + resultPages.length + blogPages.length} URL(s).`);
 }
 
 main();
