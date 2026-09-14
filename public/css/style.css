@@ -571,12 +571,13 @@ a { color: var(--accent); }
 .product-list {
   list-style: none;
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-gap);
   padding: 0;
   margin: 2rem 0;
 }
 @media (min-width: 640px) {
-  .product-list { grid-template-columns: repeat(2, 1fr); }
+  .product-list { grid-template-columns: repeat(3, 1fr); }
 }
 
 .pcard {
