@@ -626,7 +626,7 @@ a { color: var(--accent); }
 /* Mobile: one card per row, image on the left, text+CTA stacked to its right */
 @media (max-width: 639px) {
   .product-list { grid-template-columns: 1fr; }
-  .pcard { flex-direction: row; }
+  .pcard { flex-direction: row; align-items: center; }
   .pimg { width: 110px; height: 110px; flex-shrink: 0; }
   .pcard-body { padding: 1rem; }
   .pcard .pbtn { align-self: flex-start; }
