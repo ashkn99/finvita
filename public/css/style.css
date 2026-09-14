@@ -75,11 +75,16 @@ a { color: var(--accent); }
   font-size: 1.0625rem;
 }
 
-/* Shared reading-width column for wizard/result/blog pages, so text,
-   product cards, and FAQs all line up instead of jumping between widths. */
+/* Shared content column for wizard/result/blog pages: matches the
+   full .page-wide width (same as the nav/topbar above it) so nothing
+   reads as narrower than the header, while still keeping the text,
+   product cards, and FAQs inside it all the same width as each other. */
 .content-col {
-  max-width: 62ch;
   margin: 0 auto;
+}
+.content-col .explain,
+.content-col .article-body {
+  max-width: none;
 }
 
 .article-body {
