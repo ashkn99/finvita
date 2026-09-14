@@ -27,14 +27,14 @@ function productCardHtml(product) {
   return `
       <li class="pcard">
         <div class="pimg">${img}</div>
-        <div>
+        <div class="pcard-body">
           <div class="pname">${escapeHtml(product.name)}</div>
           <div class="pnote">${escapeHtml(product.note)}</div>
+          <a class="pbtn" href="${escapeHtml(product.amazonAffiliateUrl)}" rel="sponsored noopener" target="_blank">
+            Shop on Amazon
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
         </div>
-        <a class="pbtn" href="${escapeHtml(product.amazonAffiliateUrl)}" rel="sponsored noopener" target="_blank">
-          Shop on Amazon
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
-        </a>
       </li>`;
 }
 
