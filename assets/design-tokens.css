@@ -1,0 +1,27 @@
+/* Design Tokens - Auto-generated */
+/* Do not edit directly - modify tokens.json instead */
+
+/* === PRIMITIVES === */
+/* Single-hue system (oklch hue 258) — see docs/brand-guidelines.md */
+:root {
+  --primitive-color-primary-50: #EFF6FF;
+  --primitive-color-primary-100: #DFECFF;
+  --primitive-color-primary-200: #C4D9F9;
+  --primitive-color-primary-300: #9EC0F2;
+  --primitive-color-primary-400: #6899E2;
+  --primitive-color-primary-500: #2D6FCD;
+  --primitive-color-primary-600: #0D53AF;
+  --primitive-color-primary-700: #013E8B;
+  --primitive-color-primary-800: #012A63;
+  --primitive-color-primary-900: #00183F;
+}
+
+/* === SEMANTIC === */
+:root {
+
+}
+
+/* === COMPONENTS === */
+:root {
+
+}

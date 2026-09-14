@@ -11,6 +11,9 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://finvita.online/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
@@ -35,16 +38,18 @@
         <p>Cloudy water, a sick fish, algae that won't quit — every thread says something different. We ask a few questions, narrow it to the most likely cause, and point you to what actually fixes it.</p>
         <a class="hero-cta" href="#diagnose">Start My Diagnosis</a>
       </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 120 90" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 55c10-16 28-24 42-24 10 0 18 7 22 24-4 17-12 24-22 24-14 0-32-8-42-24z"/>
+          <path d="M52 55l18-13v26z"/>
+        </svg>
+      </div>
     </div>
 
     <section class="reveal">
       <h2 class="eyebrow-label" id="how-it-works">How it works</h2>
       <div class="flow">
         <div class="flow-steps">
-          <svg class="flow-track" viewBox="0 0 100 8" preserveAspectRatio="none" aria-hidden="true">
-            <path class="flow-track-bg" d="M16,4 L84,4" pathLength="100"/>
-            <path class="flow-track-fg" d="M16,4 L84,4" pathLength="100"/>
-          </svg>
           <div class="flow-step">
             <div class="flow-num">1</div>
             <div class="flow-title">Answer a few questions</div>
@@ -68,7 +73,7 @@
       <div class="kicker">Where's the problem?</div>
       <h2 class="doors-heading">What's worrying you today?</h2>
       <div class="doors">
-        <a class="door" href="diagnose-fish.html">
+        <a class="door primary" href="diagnose-fish.html">
           <div class="tile">
             <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M6 24c6-9 16-13 24-13 6 0 10 4 12 13-2 9-6 13-12 13-8 0-18-4-24-13z"/><path d="M30 24l10-7v14z"/></svg>
           </div>

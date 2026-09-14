@@ -1,0 +1,20 @@
+{
+  "brand": "Finvita",
+  "note": "Single-hue system (oklch hue 258) — 'secondary' and 'accent' alias the same ramp as 'primary' on purpose. See docs/brand-guidelines.md.",
+  "primitive": {
+    "color": {
+      "primary": {
+        "50": { "$value": "#EFF6FF", "$type": "color" },
+        "100": { "$value": "#DFECFF", "$type": "color" },
+        "200": { "$value": "#C4D9F9", "$type": "color" },
+        "300": { "$value": "#9EC0F2", "$type": "color" },
+        "400": { "$value": "#6899E2", "$type": "color" },
+        "500": { "$value": "#2D6FCD", "$type": "color" },
+        "600": { "$value": "#0D53AF", "$type": "color" },
+        "700": { "$value": "#013E8B", "$type": "color" },
+        "800": { "$value": "#012A63", "$type": "color" },
+        "900": { "$value": "#00183F", "$type": "color" }
+      }
+    }
+  }
+}
