@@ -11,6 +11,17 @@ matters more than usual).
 - **Hosting**: Cloudflare Pages, auto-deploys on every push to `main`
   (build command `node check-tree.js && node build.js`, output dir `public`)
 
+## This branch: `design-blank-slate`
+
+Branched from `main` with every page, wizard tree, and the build pipeline
+kept identical — only `public/css/style.css` was gutted down to the handful
+of rules needed for actual interactivity (mobile nav toggle, focus
+visibility, sane inline-SVG sizing). No color, type, spacing, or layout
+decisions are made here on purpose: it's a clean starting point for
+exploring a new visual direction without redoing the product itself. `main`
+still has the live, fully-designed version — compare against it, don't
+merge this branch into `main` without deciding that's actually the goal.
+
 ## Architecture — read this before reaching for a framework
 
 Plain static HTML/CSS/vanilla JS. **Zero npm dependencies, by deliberate
@@ -91,6 +102,24 @@ keep a minimal back-button-only topbar — no nav clutter mid-task.
 - Product ASINs (in `data/products.json`) were sourced via web search at a
   point in time — worth spot-checking they're still live before relying on
   them for real traffic
+
+## Editorial redesign exists in git history (not on `main`)
+
+A full visual redesign (new asymmetric hero with real abstract photography,
+differentiated "how it works" vs. category-card layouts, a verdict-led
+results page hierarchy, wizard progress indicator + transitions, em-dash
+cleanup) was built, verified in-browser, committed, and briefly deployed as
+commit `7764858`. It was reverted (`74f10a7`) shortly after because the live
+site went unreachable right after deploy — but that outage was later traced
+entirely to a stale DNS cache on the maintainer's own ISP, unrelated to the
+deploy or the code (confirmed via direct 1.1.1.1 lookup, phone on cellular
+data, and a VPN all loading the site fine while the deploy was live). **The
+redesign itself was not broken.** If asked to redesign again, check
+`git show 7764858` first — reapplying/cherry-picking that commit may be
+faster and better-vetted than rebuilding from scratch. It also already
+resolves the "V1 Gradient Hero" note below (replaces the boxed gradient hero
+with an asymmetric editorial layout, same blue accent) and the em-dash gap
+noted below, if it's reapplied.
 
 ## Deeper history
 
