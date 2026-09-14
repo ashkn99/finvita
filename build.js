@@ -49,6 +49,69 @@ function tagSectionHtml(outcome) {
   return '';
 }
 
+function causesSectionHtml(outcome) {
+  if (!outcome.causes || outcome.causes.length === 0) return '';
+  const items = outcome.causes.map((c) => `<li>${escapeHtml(c)}</li>`).join('\n      ');
+  return `
+    <h2>Why this happens</h2>
+    <ul class="explain">
+      ${items}
+    </ul>`;
+}
+
+function stepsSectionHtml(outcome) {
+  if (!outcome.steps || outcome.steps.length === 0) return '';
+  const items = outcome.steps.map((s) => `<li>${escapeHtml(s)}</li>`).join('\n      ');
+  return `
+    <h2>What to do next</h2>
+    <ol class="explain">
+      ${items}
+    </ol>`;
+}
+
+function faqSectionHtml(outcome) {
+  if (!outcome.faq || outcome.faq.length === 0) return '';
+  const items = outcome.faq.map((f) => `
+      <details class="faq-item">
+        <summary>${escapeHtml(f.q)}
+          <svg class="faq-chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        </summary>
+        <div class="faq-a">${escapeHtml(f.a)}</div>
+      </details>`).join('');
+  return `
+    <h2>Frequently asked questions</h2>
+    <div class="faq-list">${items}
+    </div>`;
+}
+
+function jsonLdScript(data) {
+  return `<script type="application/ld+json">${JSON.stringify(data).replace(/</g, '\\u003c')}</script>`;
+}
+
+function jsonldSectionHtml(outcome, canonicalUrl) {
+  const scripts = [];
+  scripts.push(jsonLdScript({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL + '/' },
+      { '@type': 'ListItem', position: 2, name: outcome.title, item: canonicalUrl },
+    ],
+  }));
+  if (outcome.faq && outcome.faq.length > 0) {
+    scripts.push(jsonLdScript({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: outcome.faq.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    }));
+  }
+  return scripts.join('\n  ');
+}
+
 function main() {
   const outcomes = loadJson('outcomes.json');
   const products = loadJson('products.json');
@@ -64,7 +127,11 @@ function main() {
       .replace(/{{META_DESCRIPTION}}/g, escapeHtml(truncate(outcome.explanation, 155)))
       .replace(/{{CANONICAL_URL}}/g, canonicalUrl)
       .replace('{{TAG_SECTION}}', tagSectionHtml(outcome))
-      .replace('{{PRODUCTS_SECTION}}', productsSectionHtml(outcome, products));
+      .replace('{{CAUSES_SECTION}}', causesSectionHtml(outcome))
+      .replace('{{STEPS_SECTION}}', stepsSectionHtml(outcome))
+      .replace('{{PRODUCTS_SECTION}}', productsSectionHtml(outcome, products))
+      .replace('{{FAQ_SECTION}}', faqSectionHtml(outcome))
+      .replace('{{JSONLD_SECTION}}', jsonldSectionHtml(outcome, canonicalUrl));
     fs.writeFileSync(path.join(outDir, `${slug}.html`), html);
   }
   console.log(`Built ${Object.keys(outcomes).length} result page(s) into public/results/`);

@@ -10,21 +10,27 @@
   <meta property="og:description" content="{{META_DESCRIPTION}}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="{{CANONICAL_URL}}">
+  <meta property="og:image" content="https://finvita.online/img/hero-poster.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css?v=14">
+  {{JSONLD_SECTION}}
 </head>
 <body>
   <main class="page">
     <div class="topbar">
-      <a class="iconbtn" href="../index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg></a>
+      <a class="iconbtn" href="../index.html" aria-label="Back to home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg></a>
     </div>
     {{TAG_SECTION}}
     <h1>{{TITLE}}</h1>
     <p class="explain">{{EXPLANATION}}</p>
+    {{CAUSES_SECTION}}
+    {{STEPS_SECTION}}
     {{PRODUCTS_SECTION}}
+    {{FAQ_SECTION}}
 
     <footer class="site-footer">
       <a href="../about.html">About</a>

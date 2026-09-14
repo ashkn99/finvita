@@ -3,132 +3,446 @@
     "title": "Ich (White Spot Disease)",
     "explanation": "Small white spots resembling salt or sugar grains, often paired with fish rubbing against rocks or decorations, are the classic sign of ich — one of the most common freshwater fish parasites. It spreads quickly to other fish in the tank, so treat the whole tank, not just the affected fish.",
     "confidence": "likely",
-    "productIds": ["ich-treatment-generic", "aquarium-salt", "quarantine-net-breeder"]
+    "productIds": ["ich-treatment-generic", "aquarium-salt", "quarantine-net-breeder"],
+    "causes": [
+      "Stress from sudden temperature changes, transport, or overcrowding weakens a fish's immune response, letting the parasite take hold.",
+      "It's often introduced by new fish, plants, or decorations added without a quarantine period.",
+      "Cooler water lets the parasite's life cycle run longer, making outbreaks more likely and harder to fully clear."
+    ],
+    "steps": [
+      "Raise the tank temperature gradually to around 82-86°F (28-30°C) to speed up the parasite's life cycle so treatment can reach it.",
+      "Treat the whole tank with an ich medication or aquarium salt, not just the visibly affected fish — the parasite is present on fish that look clean too.",
+      "Continue treatment for the full course listed on the product, even after spots disappear, since part of the life cycle isn't visible.",
+      "Quarantine any new fish for 2-4 weeks before adding them to an established tank to prevent reintroducing it."
+    ],
+    "faq": [
+      { "q": "Is ich contagious to other fish?", "a": "Yes — ich spreads quickly through shared water, so treat the entire tank, not just the fish showing spots." },
+      { "q": "How long does ich take to cure?", "a": "Most treatments take 7-14 days to fully clear an outbreak, since the parasite's life cycle includes a stage that's resistant to medication." }
+    ]
   },
   "fin-rot": {
     "title": "Fin Rot",
     "explanation": "Ragged, frayed, or disappearing fin edges — sometimes with a white or red tinge — usually point to fin rot, a bacterial infection that takes hold when water quality is poor or a fish is stressed. Improving water quality alongside treatment gives the best results.",
     "confidence": "likely",
-    "productIds": ["fin-rot-treatment-generic", "water-conditioner"]
+    "productIds": ["fin-rot-treatment-generic", "water-conditioner"],
+    "causes": [
+      "Poor water quality — elevated ammonia, nitrite, or nitrate — is the most common trigger, since it stresses fish and lets opportunistic bacteria take hold.",
+      "Physical injury from aggressive tankmates, sharp decor, or fin-nipping species can create an entry point for infection.",
+      "Overcrowding and low oxygen add ongoing stress that makes fish more susceptible."
+    ],
+    "steps": [
+      "Test your water and do a partial water change to correct any ammonia, nitrite, or nitrate issue.",
+      "Treat with a fin rot / bacterial medication.",
+      "Remove or separate any aggressive tankmates that may be causing physical damage.",
+      "Keep up regular water changes during treatment — clean water speeds recovery and prevents reinfection."
+    ],
+    "faq": [
+      { "q": "Will fin rot fins grow back?", "a": "Yes, in most cases — once the infection is treated and water quality is stable, fins regrow over several weeks, though the edge may look slightly different than before." },
+      { "q": "Can fin rot kill a fish?", "a": "Left untreated, it can progress to the fish's body and become fatal, so it's worth treating as soon as you notice ragged or receding fin edges." }
+    ]
   },
   "low-oxygen-poor-water": {
     "title": "Low Oxygen or Poor Water Quality",
     "explanation": "Gasping at the surface or rapid gill movement almost always points to a lack of dissolved oxygen or a water quality problem, often ammonia or nitrite. Test your water immediately and improve surface agitation or aeration.",
     "confidence": "likely",
-    "productIds": ["air-stone-pump", "water-test-kit", "water-conditioner"]
+    "productIds": ["air-stone-pump", "water-test-kit", "water-conditioner"],
+    "causes": [
+      "Overcrowding or overstocking increases oxygen demand beyond what the tank's surface agitation can replace.",
+      "A dirty filter, decaying waste, or overfeeding drives ammonia and nitrite up, which stresses fish further.",
+      "Warm water holds less dissolved oxygen than cool water, so a heatwave or a warm room can trigger symptoms even without a water quality problem."
+    ],
+    "steps": [
+      "Test ammonia, nitrite, and nitrate immediately — this is the most common underlying cause.",
+      "Increase surface agitation with an air stone, sponge filter, or by lowering the water level slightly under a filter's outflow.",
+      "Do a partial water change (25-50%) if any parameter is elevated.",
+      "Check that the filter isn't clogged and is producing normal flow."
+    ],
+    "faq": [
+      { "q": "Why is my fish gasping at the surface?", "a": "It's almost always low dissolved oxygen or a water quality problem like an ammonia or nitrite spike — test your water and increase surface agitation right away." },
+      { "q": "Can low oxygen kill fish quickly?", "a": "Yes — severe oxygen deprivation can be fatal within hours, so treat gasping at the surface as an emergency, not something to monitor overnight." }
+    ]
   },
   "swim-bladder": {
     "title": "Swim Bladder Disorder",
     "explanation": "Trouble staying balanced — floating, sinking, swimming sideways or upside down — usually points to swim bladder disorder. It's often caused by overfeeding or constipation and frequently resolves with a few days of fasting, though poor water quality can also be a contributing factor worth ruling out.",
     "confidence": "possible",
-    "productIds": ["water-test-kit"]
+    "productIds": ["water-test-kit"],
+    "causes": [
+      "Overfeeding or swallowing air while eating floating food is the most common cause, especially in goldfish and bettas.",
+      "Constipation from a diet too high in dry pellets and too low in fiber can put pressure on the swim bladder.",
+      "Less commonly, a bacterial or parasitic infection, or a physical injury, can affect the swim bladder directly."
+    ],
+    "steps": [
+      "Fast the fish for 24-48 hours to let its digestive system reset.",
+      "Offer a skinned, cooked pea (or other fiber-rich food) after fasting to help relieve constipation.",
+      "Soak dry pellets in water for a few minutes before feeding to reduce swallowed air.",
+      "Test your water to rule out a quality issue if symptoms don't improve within a few days."
+    ],
+    "faq": [
+      { "q": "Will swim bladder disorder go away on its own?", "a": "Often yes, within a few days of fasting and dietary changes, if the cause is overfeeding or constipation rather than infection." },
+      { "q": "Can fish recover from swim bladder disease?", "a": "Most cases caused by diet resolve fully with fasting and fiber; if it persists more than a week, water quality or a low-grade infection may be the actual cause." }
+    ]
   },
   "aggression-stocking": {
     "title": "Aggression / Stocking Issue",
     "explanation": "Ongoing aggression toward tankmates is usually a stocking problem — not enough space, incompatible species, or not enough hiding spots and broken sightlines for weaker fish to retreat to.",
     "confidence": "likely",
-    "productIds": ["aquarium-decor-hiding-spots"]
+    "productIds": ["aquarium-decor-hiding-spots"],
+    "causes": [
+      "Not enough tank volume for the number or size of fish present.",
+      "Incompatible species mixed together — different temperaments, activity levels, or territorial needs.",
+      "Too few hiding spots or open sightlines, which stop weaker fish from breaking line of sight with an aggressor.",
+      "An imbalanced male-to-female ratio in species where males compete over females."
+    ],
+    "steps": [
+      "Research the adult size and temperament of every species in the tank against your actual tank size.",
+      "Add more decor, plants, or caves to break up sightlines and create hiding spots.",
+      "Consider rehoming or separating a persistently aggressive individual if the behavior doesn't settle.",
+      "Rearrange decor when reintroducing a separated fish — this resets territory boundaries."
+    ],
+    "faq": [
+      { "q": "How do I stop fish from fighting?", "a": "Add more hiding spots and visual breaks first — most aggression is territorial and eases once fish can't constantly see each other." },
+      { "q": "Is some aggression normal in a community tank?", "a": "Brief chasing or fin-flaring during initial introductions is common; ongoing chasing, biting, or a fish hiding constantly is not and needs addressing." }
+    ]
   },
   "new-tank-syndrome": {
     "title": "New Tank Syndrome",
     "explanation": "In a tank that's less than 4-6 weeks old, an ammonia or nitrite spike (\"new tank syndrome\") is the most common cause of fish dying or acting sick. The tank's beneficial bacteria hasn't built up enough yet to process fish waste.",
     "confidence": "likely",
-    "productIds": ["water-test-kit", "beneficial-bacteria-starter", "water-conditioner"]
+    "productIds": ["water-test-kit", "beneficial-bacteria-starter", "water-conditioner"],
+    "causes": [
+      "The tank hasn't built up enough beneficial bacteria yet to process fish waste into less toxic compounds.",
+      "Adding too many fish too quickly overwhelms the small bacteria colony a new tank starts with.",
+      "Skipping a fishless cycling period before stocking."
+    ],
+    "steps": [
+      "Test ammonia and nitrite daily — both should read zero in a healthy, cycled tank.",
+      "Do partial water changes (25-50%) whenever ammonia or nitrite is detected, to keep levels safe for fish.",
+      "Add a beneficial bacteria starter product to speed up cycling.",
+      "Hold off on adding more fish until ammonia and nitrite both consistently read zero."
+    ],
+    "faq": [
+      { "q": "How long does new tank syndrome last?", "a": "Typically 4-6 weeks while the tank builds up enough beneficial bacteria, though a bacteria starter product and frequent water changes can shorten the rough patch." },
+      { "q": "Can new tank syndrome kill fish?", "a": "Yes — ammonia and nitrite are both toxic at the levels a new tank produces, which is why frequent water testing during this period matters." }
+    ]
   },
   "stress-illness-general": {
     "title": "Stress or Early Illness",
     "explanation": "In an established tank, prolonged hiding or loss of appetite is usually stress or the early stage of an illness that hasn't shown visible symptoms yet. Test your water first to rule out a quality issue, and keep a close eye out for any visible symptoms developing.",
     "confidence": "possible",
-    "productIds": ["water-test-kit", "water-conditioner"]
+    "productIds": ["water-test-kit", "water-conditioner"],
+    "causes": [
+      "A water quality issue that hasn't shown up as a visible symptom yet.",
+      "Recent changes — a new tankmate, rearranged decor, or a move to a new tank — can cause temporary stress.",
+      "The early stage of an illness, before external symptoms like spots or fin damage appear."
+    ],
+    "steps": [
+      "Test your water first — ammonia, nitrite, nitrate, pH, and temperature.",
+      "Watch closely for any developing symptoms (spots, discoloration, clamped fins) over the next few days.",
+      "Reduce other stressors: check tankmate compatibility, avoid unnecessary decor changes, and keep feeding consistent.",
+      "Consider a quarantine tank if you suspect illness, to observe without risking the rest of the tank."
+    ],
+    "faq": [
+      { "q": "Why is my fish hiding and not eating?", "a": "This is usually the earliest sign of stress or illness, before other symptoms appear — testing your water is the first step since a hidden water quality issue is the most common cause." }
+    ]
   },
   "urgent-water-quality": {
     "title": "Urgent: Check Your Water Now",
     "explanation": "A fish that's gasping, not moving, or lying on the bottom or side is a medical emergency and is very often caused by an acute water quality problem: ammonia, nitrite, or an oxygen crash. Test your water immediately and do a partial water change if anything is off.",
     "confidence": "likely",
-    "productIds": ["water-test-kit", "air-stone-pump", "water-conditioner"]
+    "productIds": ["water-test-kit", "air-stone-pump", "water-conditioner"],
+    "causes": [
+      "An acute ammonia or nitrite spike, often from overfeeding, overstocking, or a filter that lost its bacteria colony.",
+      "A sudden oxygen crash, which can happen after a heatwave, a power outage stopping the filter, or a dead fish decaying unnoticed.",
+      "A chemical contaminant introduced from cleaning products, aerosols, or unconditioned tap water."
+    ],
+    "steps": [
+      "Test ammonia and nitrite immediately — this is a medical emergency, not a wait-and-see situation.",
+      "Do an immediate partial water change (25-50%) with dechlorinated, temperature-matched water.",
+      "Increase surface agitation or add an air stone right away to boost oxygen.",
+      "Check that the filter is running normally and hasn't lost power or clogged."
+    ],
+    "faq": [
+      { "q": "My fish is lying on the bottom and not moving, what do I do?", "a": "Test your water immediately and do a partial water change — this combination of symptoms usually points to an acute ammonia, nitrite, or oxygen crisis that needs correcting right away, not overnight monitoring." }
+    ]
   },
   "general-post-mortem": {
     "title": "After Fish Loss: What to Check",
     "explanation": "In an established, stable tank, occasional fish loss can happen from old age or causes that aren't preventable. Still, it's worth testing your water before adding new fish, since a hidden water quality issue can silently affect the rest of your tank.",
     "confidence": null,
-    "productIds": ["water-test-kit"]
+    "productIds": ["water-test-kit"],
+    "causes": [
+      "Natural causes such as old age, especially in short-lived species.",
+      "A hidden water quality issue that didn't show obvious symptoms before the loss.",
+      "Underlying stress or disease that wasn't caught in time."
+    ],
+    "steps": [
+      "Test your water before adding any new fish, even if the rest of the tank looks fine.",
+      "Remove the deceased fish promptly to prevent it from affecting water quality.",
+      "Watch remaining fish closely for a week or two for any delayed symptoms.",
+      "Avoid restocking immediately — give it a few days to confirm the rest of the tank is stable."
+    ],
+    "faq": [
+      { "q": "Should I test my water after losing a fish?", "a": "Yes, even in an established tank — a hidden water quality problem can affect the rest of your fish even if only one showed symptoms." }
+    ]
   },
   "cycling-tank": {
     "title": "Cycling a New Tank",
     "explanation": "A new tank needs several weeks to build up the beneficial bacteria that break down fish waste before it's safe to stock at normal levels. Test regularly for ammonia and nitrite, and add fish gradually.",
     "confidence": "likely",
-    "productIds": ["water-test-kit", "beneficial-bacteria-starter"]
+    "productIds": ["water-test-kit", "beneficial-bacteria-starter"],
+    "causes": [
+      "A tank always needs time to build up nitrifying bacteria before it can safely process fish waste — this isn't preventable, only managed.",
+      "Cycling can stall if ammonia levels get too high for the bacteria colony to handle, or if the water is too cold for bacteria to grow efficiently."
+    ],
+    "steps": [
+      "Add an ammonia source (fish food, pure ammonia, or a few hardy fish) to feed the bacteria you're growing.",
+      "Test ammonia and nitrite daily; nitrate rising while ammonia and nitrite fall to zero signals the cycle is progressing.",
+      "Add a beneficial bacteria starter product to speed up the process significantly.",
+      "Only add fish gradually, a few at a time, once ammonia and nitrite both read zero consistently."
+    ],
+    "faq": [
+      { "q": "How long does it take to cycle a fish tank?", "a": "A fishless cycle typically takes 4-6 weeks without a bacteria starter product, or as little as 1-2 weeks with one." },
+      { "q": "Can I add fish before the tank is fully cycled?", "a": "It's not recommended — fish added to an uncycled tank are exposed to ammonia and nitrite spikes that can be fatal, known as new tank syndrome." }
+    ]
   },
   "stocking-compatibility": {
     "title": "Checking Fish Compatibility",
     "explanation": "Compatibility depends on adult size, temperament, water parameter needs, and tank size — there's no single answer that covers every species pairing. Look up your specific fish species against your tank size, or ask in an aquarium community with your exact stocking list.",
     "confidence": null,
-    "productIds": []
+    "productIds": [],
+    "causes": [
+      "Adult size — many species are sold small but grow much larger, which changes compatibility later.",
+      "Temperament — semi-aggressive or territorial species often can't be mixed with peaceful, slow-moving ones.",
+      "Water parameter needs — species requiring very different pH, hardness, or temperature ranges are harder to keep together long-term.",
+      "Tank size and hiding spots — even compatible species can clash in a tank too small to give each one its own space."
+    ],
+    "steps": [
+      "Look up the adult size of every species you're considering, not just their size at purchase.",
+      "Cross-check temperament — mixing peaceful and semi-aggressive species is a common source of long-term problems.",
+      "Confirm all species can share the same pH, hardness, and temperature range comfortably.",
+      "Size the tank and hiding spots for the most territorial species in the mix, not the average."
+    ],
+    "faq": [
+      { "q": "How do I know if two fish species are compatible?", "a": "Check adult size, temperament, water parameter needs, and available tank space for each species — compatibility depends on all four together, not any single factor." }
+    ]
   },
   "cloudy-water-bacterial-bloom": {
     "title": "Bacterial Bloom (Cloudy Water)",
     "explanation": "White or gray haze is usually a bacterial bloom — a sudden spike in the bacteria that feed on excess waste or uneaten food, common in new tanks or after overfeeding. It typically clears on its own within a few days; testing your water rules out a bigger issue in the meantime.",
     "confidence": "likely",
-    "productIds": ["water-test-kit", "beneficial-bacteria-starter"]
+    "productIds": ["water-test-kit", "beneficial-bacteria-starter"],
+    "causes": [
+      "A sudden increase in bacteria feeding on excess waste, uneaten food, or a recent substrate disturbance.",
+      "Common in new tanks that are still cycling, or after overfeeding in an established one.",
+      "Overcleaning the filter (rinsing media in tap water) can also trigger a bloom by killing off beneficial bacteria that were keeping waste in check."
+    ],
+    "steps": [
+      "Avoid the urge to do a large water change right away — it can prolong the bloom by removing the bacteria trying to stabilize things.",
+      "Cut back feeding for a few days to reduce the waste feeding the bloom.",
+      "Test ammonia and nitrite to rule out a bigger underlying issue.",
+      "Let it run its course — most blooms clear within 3-7 days on their own."
+    ],
+    "faq": [
+      { "q": "How long does cloudy tank water take to clear?", "a": "Most bacterial blooms clear within 3-7 days on their own once the excess waste feeding them is reduced." },
+      { "q": "Should I do a water change for cloudy water?", "a": "A small water change is fine, but avoid a large one — removing too much of the beneficial bacteria can prolong the cloudiness rather than fix it." }
+    ]
   },
   "green-water-algae": {
     "title": "Green Water (Algae Bloom)",
     "explanation": "Green, pea-soup-colored water is a free-floating algae bloom, almost always caused by too much light (duration or intensity) combined with excess nutrients. Cutting back light hours helps prevent it from returning, alongside a direct algae treatment.",
     "confidence": "likely",
-    "productIds": ["algae-control-treatment", "water-test-kit"]
+    "productIds": ["algae-control-treatment", "water-test-kit"],
+    "causes": [
+      "Too much light — either duration (more than 8-10 hours a day) or intensity — feeds free-floating algae directly.",
+      "Excess nutrients from overfeeding, overstocking, or infrequent water changes give algae more to consume.",
+      "Direct sunlight hitting the tank is a common, often overlooked trigger."
+    ],
+    "steps": [
+      "Cut back lighting to 6-8 hours a day and move the tank out of direct sunlight if possible.",
+      "Reduce feeding and do a partial water change to lower excess nutrients.",
+      "Treat with an algae control product to clear the current bloom faster.",
+      "Add fast-growing live plants if you want a longer-term fix — they compete with algae for the same nutrients."
+    ],
+    "faq": [
+      { "q": "How do I get rid of green water in my fish tank?", "a": "Cut back light exposure, reduce nutrients with a water change and lighter feeding, and use an algae treatment to clear the current bloom — then keep light and feeding in check to prevent it returning." }
+    ]
   },
   "tannin-discoloration": {
     "title": "Tannins (Brown/Tea-Colored Water)",
     "explanation": "Brown or tea-colored water is usually tannins leaching from driftwood or dried leaves — cosmetic, not harmful, and often intentional in some setups. Activated carbon in your filter will clear it up if you'd rather have clear water.",
     "confidence": "likely",
-    "productIds": ["activated-carbon-filter-media"]
+    "productIds": ["activated-carbon-filter-media"],
+    "causes": [
+      "Driftwood, dried leaves (like Indian almond leaf), or other natural decor leaching tannins into the water.",
+      "New driftwood releases tannins fastest, tapering off over weeks to months as it leaches out."
+    ],
+    "steps": [
+      "Add activated carbon to your filter to absorb the tannins and clear the water.",
+      "Pre-soak or boil new driftwood before adding it to reduce how much it leaches once submerged.",
+      "Do more frequent partial water changes if you want faster results without carbon.",
+      "Leave it as-is if you like the look — tannins are cosmetic, and many aquarists keep them intentionally in a \"blackwater\" setup."
+    ],
+    "faq": [
+      { "q": "Is tea-colored aquarium water safe for fish?", "a": "Yes — tannins from driftwood or leaves are cosmetic, not harmful, and some fish species actually benefit from the slightly acidic, tannin-stained water it creates." }
+    ]
   },
   "protein-foam": {
     "title": "Protein Foam / Surface Bubbles",
     "explanation": "Foam or bubbles on the surface usually come from a buildup of dissolved proteins, often linked to overfeeding or waste. A partial water change plus more surface agitation clears it, and cutting back feeding slightly helps prevent it from returning.",
     "confidence": "likely",
-    "productIds": ["water-conditioner", "air-stone-pump"]
+    "productIds": ["water-conditioner", "air-stone-pump"],
+    "causes": [
+      "A buildup of dissolved proteins, usually from overfeeding or excess organic waste.",
+      "Low surface agitation lets foam accumulate instead of breaking up naturally.",
+      "New tap water additives or medications can sometimes contribute temporarily."
+    ],
+    "steps": [
+      "Do a partial water change to remove the dissolved proteins causing the foam.",
+      "Increase surface agitation with an air stone or by adjusting filter flow.",
+      "Cut back feeding slightly, and remove any uneaten food promptly.",
+      "Skim visible foam off the surface with a net or paper towel while addressing the underlying cause."
+    ],
+    "faq": [
+      { "q": "Why is there foam on top of my fish tank?", "a": "It's usually a buildup of dissolved proteins from overfeeding or waste — a partial water change and more surface agitation typically clears it within a few days." }
+    ]
   },
   "smelly-water": {
     "title": "Bad-Smelling Water",
     "explanation": "A bad smell almost always means decaying organic matter — uneaten food, dead plant material, or something (or someone) hidden in the decor — or a bacterial imbalance. Do a partial water change, check for anything decaying, and test your water to see if ammonia is elevated.",
     "confidence": "likely",
-    "productIds": ["water-test-kit", "water-conditioner"]
+    "productIds": ["water-test-kit", "water-conditioner"],
+    "causes": [
+      "Decaying organic matter — uneaten food, dead plant leaves, or an unnoticed dead fish hidden in decor.",
+      "A bacterial imbalance, often linked to an ammonia spike.",
+      "An overdue filter clean allowing trapped waste to break down inside the media."
+    ],
+    "steps": [
+      "Check thoroughly for anything decaying, including under and behind decor.",
+      "Do a partial water change and test ammonia and nitrite.",
+      "Clean (don't fully replace) filter media in tank water, not tap water, to avoid killing beneficial bacteria.",
+      "Address the source rather than masking the smell — it won't resolve until the decaying matter or imbalance is fixed."
+    ],
+    "faq": [
+      { "q": "Why does my fish tank smell bad?", "a": "A bad smell almost always means decaying organic matter or a bacterial/ammonia imbalance — check for anything decaying in the decor, then test your water and do a partial water change." }
+    ]
   },
   "established-tank-ammonia-spike": {
     "title": "Ammonia Spike in an Established Tank",
     "explanation": "In a tank that's been running a while, a sudden ammonia or nitrite spike usually means overstocking, overfeeding, a dead fish or plant matter decaying somewhere, or filter media that lost its bacteria (often from rinsing it in tap water). Find and remove the source, then support the bacteria colony while it recovers.",
     "confidence": "likely",
-    "productIds": ["water-test-kit", "beneficial-bacteria-starter", "water-conditioner"]
+    "productIds": ["water-test-kit", "beneficial-bacteria-starter", "water-conditioner"],
+    "causes": [
+      "Overstocking or a recent addition of several new fish at once.",
+      "Overfeeding, or a dead fish or plant matter decaying somewhere unnoticed.",
+      "Filter media that lost its bacteria colony, often from rinsing it in tap water (chlorine kills the bacteria) or replacing too much media at once."
+    ],
+    "steps": [
+      "Find and remove the source — check for a hidden dead fish, decaying plant matter, or recent overfeeding.",
+      "Do partial water changes to bring ammonia down to a safe level while the bacteria colony recovers.",
+      "Add a beneficial bacteria starter product to help the colony rebuild faster.",
+      "Hold off on adding new fish or cleaning the filter aggressively until levels stabilize."
+    ],
+    "faq": [
+      { "q": "Why did ammonia spike in my established fish tank?", "a": "It usually means the bacteria colony that normally processes waste was disrupted — by overstocking, overfeeding, decaying matter, or filter media rinsed in tap water — rather than the tank never having cycled in the first place." }
+    ]
   },
   "nutrient-deficiency-yellowing": {
     "title": "Nutrient Deficiency (Yellowing Leaves)",
     "explanation": "Yellowing leaves usually mean your plants are running low on nitrogen or iron — common in tanks without regular fertilizing. A liquid plant fertilizer replaces what the water column alone doesn't provide.",
     "confidence": "likely",
-    "productIds": ["liquid-plant-fertilizer"]
+    "productIds": ["liquid-plant-fertilizer"],
+    "causes": [
+      "Low nitrogen or iron in the water column, common in tanks that aren't regularly fertilized.",
+      "Fast-growing or heavily-planted tanks use up available nutrients faster than a lightly-stocked tank replenishes them.",
+      "Old, established leaves naturally yellow and drop as a plant redirects nutrients to new growth — not always a deficiency."
+    ],
+    "steps": [
+      "Add a liquid plant fertilizer on a regular schedule (check the product for dosing frequency).",
+      "Trim off badly yellowed leaves so the plant can focus energy on new growth.",
+      "Check whether it's isolated to older leaves (often normal) versus new growth (more likely a genuine deficiency).",
+      "Consider root tabs for heavy root-feeders like swords or crypts, since liquid fertilizer alone may not reach the substrate."
+    ],
+    "faq": [
+      { "q": "Why are my aquarium plant leaves turning yellow?", "a": "It's usually a nitrogen or iron deficiency from irregular fertilizing — a liquid plant fertilizer on a regular schedule typically resolves it within a couple of weeks." }
+    ]
   },
   "algae-on-plants": {
     "title": "Algae Growing on Plant Leaves",
     "explanation": "Algae growing directly on leaves points to a light/nutrient imbalance — usually too much light for the nutrients available, letting algae outcompete the plant for what's there. Reducing light duration alongside an algae treatment usually clears it.",
     "confidence": "likely",
-    "productIds": ["algae-control-treatment"]
+    "productIds": ["algae-control-treatment"],
+    "causes": [
+      "Too much light relative to the nutrients available, letting algae outcompete the plants for what's there.",
+      "Long light durations (more than 8-10 hours) accelerate algae growth on any surface, including leaves.",
+      "Slow-growing or struggling plants are more prone to visible algae simply because they aren't using up nutrients as fast as a healthy, fast-growing plant would."
+    ],
+    "steps": [
+      "Reduce light duration to 6-8 hours a day.",
+      "Treat with an algae control product to clear the current growth.",
+      "Improve plant health with regular fertilizing so plants can outcompete algae for nutrients.",
+      "Manually remove heavily affected leaves if algae doesn't clear after treatment."
+    ],
+    "faq": [
+      { "q": "How do I remove algae from aquarium plant leaves?", "a": "Cut back light duration, treat with an algae control product, and keep plants well-fertilized so they outcompete algae for the same nutrients going forward." }
+    ]
   },
   "potassium-deficiency": {
     "title": "Potassium or Micronutrient Deficiency",
     "explanation": "Holes or see-through patches in otherwise healthy-looking leaves usually point to a potassium or micronutrient deficiency rather than disease or pests. A comprehensive liquid fertilizer typically resolves it within a couple of weeks.",
     "confidence": "possible",
-    "productIds": ["liquid-plant-fertilizer"]
+    "productIds": ["liquid-plant-fertilizer"],
+    "causes": [
+      "Low potassium or micronutrients relative to how fast the plant is growing.",
+      "Common in tanks that dose nitrogen and phosphorus but skip a comprehensive micronutrient supplement."
+    ],
+    "steps": [
+      "Switch to or add a comprehensive liquid fertilizer that includes potassium and micronutrients, not just nitrogen and phosphorus.",
+      "Dose consistently on a regular schedule rather than occasionally.",
+      "Trim affected leaves — the holes won't heal, but new growth should come in healthy once the deficiency is corrected.",
+      "Expect improvement within about two weeks of consistent dosing."
+    ],
+    "faq": [
+      { "q": "What causes holes in aquarium plant leaves?", "a": "Holes or see-through patches in otherwise healthy leaves usually point to a potassium or micronutrient deficiency, corrected with a comprehensive liquid fertilizer dosed consistently." }
+    ]
   },
   "low-light-co2-limited": {
     "title": "Limited Light or CO2",
     "explanation": "Plants that stay small or barely grow are usually light-limited — many live plants need more intensity or duration than a basic starter light provides. A dedicated full-spectrum plant light is the most common fix.",
     "confidence": "possible",
-    "productIds": ["aquarium-plant-light"]
+    "productIds": ["aquarium-plant-light"],
+    "causes": [
+      "A basic starter light often doesn't provide enough intensity or duration for many common live plant species.",
+      "Low CO2 availability limits how much light a plant can actually use for growth, even if the light itself is adequate.",
+      "Highly demanding (\"high-tech\") plant species need more light and CO2 than most standard setups provide."
+    ],
+    "steps": [
+      "Upgrade to a dedicated full-spectrum plant light if using a basic stock light.",
+      "Check your light is running 8-10 hours a day, consistently.",
+      "Consider a liquid CO2 supplement or a CO2 system if growth stays slow after improving light.",
+      "Choose lower-light, undemanding species (like anubias or java fern) if you'd rather not add more equipment."
+    ],
+    "faq": [
+      { "q": "Why won't my aquarium plants grow?", "a": "Slow or stalled growth is usually a light or CO2 limitation — a full-spectrum plant light run 8-10 hours a day resolves most cases, though some species need supplemental CO2 to grow well." }
+    ]
   },
   "transition-melt": {
     "title": "Transition Melt (Normal)",
     "explanation": "New aquatic plants often shed the leaves they grew before purchase (frequently grown emersed, out of water) as they adjust to underwater growth. This \"melt\" is normal and temporary — keep the water quality stable and new growth should appear within a few weeks.",
     "confidence": null,
-    "productIds": []
+    "productIds": [],
+    "causes": [
+      "Most aquatic plants are grown emersed (out of water) at the nursery, and the leaves grown that way often can't survive underwater.",
+      "The stress of transport and a new tank environment accelerates the shedding of these emersed-grown leaves."
+    ],
+    "steps": [
+      "Keep water quality stable — avoid compounding stress with parameter swings while the plant adjusts.",
+      "Remove melted leaves as they die off to prevent them from fouling the water.",
+      "Be patient — new, underwater-adapted growth typically appears within a few weeks.",
+      "Don't assume the plant is dying; melt is a normal transition, not a sign of a problem, as long as new growth eventually appears."
+    ],
+    "faq": [
+      { "q": "Is it normal for new aquarium plants to lose leaves?", "a": "Yes — this \"melt\" happens as plants shed leaves grown out of water before transitioning to underwater growth, and it's temporary as long as new growth appears within a few weeks." }
+    ]
   }
 }
