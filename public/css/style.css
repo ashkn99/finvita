@@ -75,6 +75,13 @@ a { color: var(--accent); }
   font-size: 1.0625rem;
 }
 
+/* Shared reading-width column for wizard/result/blog pages, so text,
+   product cards, and FAQs all line up instead of jumping between widths. */
+.content-col {
+  max-width: 62ch;
+  margin: 0 auto;
+}
+
 .article-body {
   max-width: 62ch;
   color: var(--ink-soft);

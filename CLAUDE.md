@@ -106,8 +106,22 @@ not referenced by any script in this repo.
 
 Landing/browsing pages (index, about, privacy, contact, blog, disclosure,
 404) share a nav (desktop: inline links; mobile: hamburger dropdown) and use
-`.page-wide` for a wider desktop container. Wizard/result pages deliberately
-keep a minimal back-button-only topbar — no nav clutter mid-task.
+`.page-wide` for a wider desktop container. Wizard/result/blog-post pages
+deliberately keep a minimal back-button-only topbar — no nav clutter
+mid-task — but as of 2026-09-14 they **also** use `.page-wide` on `<main>`,
+matching the site's container width everywhere; only the topbar/nav content
+differs, not the page width.
+
+- **`.content-col`** (`css/style.css`): a shared `max-width: 62ch; margin:
+  0 auto` wrapper used on wizard, result, and blog-post pages to keep prose
+  text, product-card grids, and FAQ accordions all the same width and
+  centered — added 2026-09-14 after `.product-list`/`.faq-list` (previously
+  uncapped) were found stretching to the full `.page-wide` width while
+  `.explain`/`.article-body` text stayed capped at 62ch, creating a jarring
+  width jump partway down blog/result pages. Wrap new sections on these
+  three page types in `.content-col` rather than introducing a new width
+  value — the topbar and nav/footer intentionally stay outside it (full
+  `.page-wide` width, like the homepage nav).
 
 - Fonts: Sora (display) + Plus Jakarta Sans (body), via Google Fonts
 - Colors: single blue accent (`--accent: oklch(55% 0.16 258)`) — a **firm,
