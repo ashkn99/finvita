@@ -187,11 +187,11 @@ function buildBlogPosts() {
 
 function blogCardHtml(post) {
   return `
-      <div class="blog-card">
+      <a class="blog-card" href="blog/${post.slug}.html">
         <p class="kicker">${escapeHtml(formatDate(post.publishedDate))}</p>
-        <h3><a href="blog/${post.slug}.html">${escapeHtml(post.title)}</a></h3>
+        <h3>${escapeHtml(post.title)}</h3>
         <p>${escapeHtml(post.metaDescription)}</p>
-      </div>`;
+      </a>`;
 }
 
 function buildBlogIndex(blogPosts) {
@@ -205,12 +205,7 @@ function buildBlogIndex(blogPosts) {
 function updateHomepageBlogSection(blogPosts) {
   const indexPath = path.join(__dirname, 'public', 'index.html');
   let html = fs.readFileSync(indexPath, 'utf8');
-  const cards = blogPosts.slice(0, 3).map((post) => `
-      <div class="blog-card">
-        <p class="kicker">${escapeHtml(formatDate(post.publishedDate))}</p>
-        <h3><a href="blog/${post.slug}.html">${escapeHtml(post.title)}</a></h3>
-        <p>${escapeHtml(post.metaDescription)}</p>
-      </div>`).join('\n');
+  const cards = blogPosts.slice(0, 3).map(blogCardHtml).join('\n');
   const replacement = `<!-- BLOG_SECTION_START -->\n      <div class="blog-list">${cards}\n      </div>\n      <!-- BLOG_SECTION_END -->`;
   html = html.replace(/<!-- BLOG_SECTION_START -->[\s\S]*?<!-- BLOG_SECTION_END -->/, replacement);
   fs.writeFileSync(indexPath, html);

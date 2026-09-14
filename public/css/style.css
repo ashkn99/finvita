@@ -332,7 +332,7 @@ a { color: var(--accent); }
 .reveal.in-view { opacity: 1; transform: none; }
 
 @media (prefers-reduced-motion: reduce) {
-  .reveal, .hero-cta, .pbtn, .door, .card {
+  .reveal, .hero-cta, .pbtn, .door, .card, .blog-card {
     transition: none !important;
   }
   .reveal { opacity: 1; transform: none; }
@@ -458,17 +458,21 @@ a { color: var(--accent); }
 .blog-card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
 }
+.blog-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
 .blog-card .kicker { margin-bottom: 0; }
-.blog-card h3 { margin: 0; font-size: 1.1rem; }
-.blog-card h3 a { color: var(--ink); text-decoration: none; }
-.blog-card h3 a:hover { color: var(--accent); }
-.blog-card p { margin: 0; color: var(--ink-soft); font-size: 0.95rem; }
+.blog-card h3 { margin: 0; font-size: 1.0625rem; color: var(--ink); }
+.blog-card:hover h3 { color: var(--accent); }
+.blog-card p { margin: 0; color: var(--ink-soft); font-size: 0.9375rem; }
 
 /* ---------- FAQ ---------- */
 .faq-list { display: flex; flex-direction: column; gap: 0.75rem; }
