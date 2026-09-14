@@ -21,9 +21,12 @@ function escapeHtml(str) {
 }
 
 function productCardHtml(product) {
+  const img = product.imageUrl
+    ? `<img src="${escapeHtml(product.imageUrl)}" alt="${escapeHtml(product.name)}" loading="lazy">`
+    : '';
   return `
       <li class="pcard">
-        <div class="pimg"></div>
+        <div class="pimg">${img}</div>
         <div>
           <div class="pname">${escapeHtml(product.name)}</div>
           <div class="pnote">${escapeHtml(product.note)}</div>
@@ -34,10 +37,11 @@ function productCardHtml(product) {
       </li>`;
 }
 
-function productsSectionHtml(outcome, products) {
+function productsSectionHtml(outcome, products, heading) {
   if (!outcome.productIds || outcome.productIds.length === 0) return '';
   const cards = outcome.productIds.map((id) => productCardHtml(products[id])).join('\n');
   return `
+    ${heading ? `<h2>${escapeHtml(heading)}</h2>` : ''}
     <ul class="product-list">${cards}
     </ul>
     <p class="disclosure">As an Amazon Associate, we earn from qualifying purchases made through the links above. See our <a href="../disclosure.html">disclosure</a> for details.</p>`;
@@ -156,6 +160,7 @@ function formatDate(iso) {
 
 function buildBlogPosts() {
   const posts = loadJson('blog-posts.json');
+  const products = loadJson('products.json');
   const template = fs.readFileSync(path.join(__dirname, 'templates', 'blog-post-template.html'), 'utf8');
   const outDir = path.join(__dirname, 'public', 'blog');
   fs.mkdirSync(outDir, { recursive: true });
@@ -170,6 +175,7 @@ function buildBlogPosts() {
       .replace(/{{CANONICAL_URL}}/g, canonicalUrl)
       .replace('{{PUBLISHED_DATE_DISPLAY}}', formatDate(post.publishedDate))
       .replace('{{BODY_HTML}}', bodyHtml)
+      .replace('{{PRODUCTS_SECTION}}', productsSectionHtml(post, products, 'What to use'))
       .replace('{{FAQ_SECTION}}', faqSectionHtml(post.faq))
       .replace('{{JSONLD_SECTION}}', jsonldSectionHtml({ title: post.title, faq: post.faq, canonicalUrl, type: 'BlogPosting' }));
     fs.writeFileSync(path.join(outDir, `${slug}.html`), html);

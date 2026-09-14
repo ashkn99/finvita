@@ -2,79 +2,79 @@
   "ich-treatment-generic": {
     "name": "API Super Ick Cure",
     "amazonAffiliateUrl": "https://www.amazon.com/dp/B0002ASG9K?tag=finvita0b-20",
-    "imageUrl": "",
+    "imageUrl": "https://m.media-amazon.com/images/I/51B9wmJkgtL._AC_SY879_.jpg",
     "note": "Common first-line ich treatment."
   },
   "aquarium-salt": {
     "name": "API Aquarium Salt",
     "amazonAffiliateUrl": "https://www.amazon.com/dp/B0010P82UO?tag=finvita0b-20",
-    "imageUrl": "",
+    "imageUrl": "https://m.media-amazon.com/images/I/51xKxEwkCGL._AC_SY450_.jpg",
     "note": "Often used alongside medication for ich."
   },
   "quarantine-net-breeder": {
     "name": "Lee's Net Breeder",
     "amazonAffiliateUrl": "https://www.amazon.com/dp/B07CPKFBSS?tag=finvita0b-20",
-    "imageUrl": "",
+    "imageUrl": "https://m.media-amazon.com/images/I/819sy6i08GL._AC_SX466_.jpg",
     "note": "Useful for isolating a sick fish during treatment."
   },
   "fin-rot-treatment-generic": {
     "name": "API Fin and Body Cure",
     "amazonAffiliateUrl": "https://www.amazon.com/dp/B06XDFJ5XN?tag=finvita0b-20",
-    "imageUrl": "",
+    "imageUrl": "https://m.media-amazon.com/images/I/719KUFq-EPS._AC_SY450_.jpg",
     "note": "Common antibacterial fin rot treatment."
   },
   "water-conditioner": {
     "name": "Seachem Prime Water Conditioner",
     "amazonAffiliateUrl": "https://www.amazon.com/dp/B010UNMS9M?tag=finvita0b-20",
-    "imageUrl": "",
+    "imageUrl": "https://m.media-amazon.com/images/I/81aLONkZHPL._SY445_.jpg",
     "note": "Improves water quality alongside treatment."
   },
   "water-test-kit": {
     "name": "API Freshwater Master Test Kit",
     "amazonAffiliateUrl": "https://www.amazon.com/dp/B00K004TNO?tag=finvita0b-20",
-    "imageUrl": "",
+    "imageUrl": "https://m.media-amazon.com/images/I/71frelp3BGL._AC_SX450_.jpg",
     "note": "Tests ammonia, nitrite, nitrate, and pH — the first step for almost every water-quality issue."
   },
   "beneficial-bacteria-starter": {
     "name": "Seachem Stability",
     "amazonAffiliateUrl": "https://www.amazon.com/dp/B0002APIIW?tag=finvita0b-20",
-    "imageUrl": "",
+    "imageUrl": "https://m.media-amazon.com/images/I/61JbGyLvTvL._AC_SY450_.jpg",
     "note": "Speeds up establishing the bacteria colony a new tank needs."
   },
   "air-stone-pump": {
     "name": "Tetra Whisper Air Pump",
     "amazonAffiliateUrl": "https://www.amazon.com/dp/B0009YHU6Y?tag=finvita0b-20",
-    "imageUrl": "",
+    "imageUrl": "https://m.media-amazon.com/images/I/81AXyFVAgxL._AC_SX425_.jpg",
     "note": "Adds surface agitation and oxygen during a water-quality emergency."
   },
   "aquarium-decor-hiding-spots": {
     "name": "Plecoceramics Aquarium Cave",
     "amazonAffiliateUrl": "https://www.amazon.com/dp/B07TJZRG1Z?tag=finvita0b-20",
-    "imageUrl": "",
+    "imageUrl": "https://m.media-amazon.com/images/I/61Hzc8GFvqL._AC_SX450_.jpg",
     "note": "Breaks sightlines and gives weaker fish somewhere to retreat from aggressive tankmates."
   },
   "algae-control-treatment": {
     "name": "API AlgaeFix",
     "amazonAffiliateUrl": "https://www.amazon.com/dp/B003SNDNQ4?tag=finvita0b-20",
-    "imageUrl": "",
+    "imageUrl": "https://m.media-amazon.com/images/I/71InwYYJHPL._AC_SY450_.jpg",
     "note": "Controls green water and other algae blooms in freshwater aquariums."
   },
   "activated-carbon-filter-media": {
     "name": "Activated Carbon Filter Media",
     "amazonAffiliateUrl": "https://www.amazon.com/dp/B01GN7ZQ70?tag=finvita0b-20",
-    "imageUrl": "",
+    "imageUrl": "https://m.media-amazon.com/images/I/61wlAWgUqvL._AC_SY450_.jpg",
     "note": "Removes tannins, odors, and discoloration from aquarium water."
   },
   "liquid-plant-fertilizer": {
     "name": "Seachem Flourish",
     "amazonAffiliateUrl": "https://www.amazon.com/dp/B000255QJS?tag=finvita0b-20",
-    "imageUrl": "",
+    "imageUrl": "https://m.media-amazon.com/images/I/51vfqHLVWdL._AC_SY879_.jpg",
     "note": "Comprehensive freshwater plant supplement to correct nutrient deficiencies."
   },
   "aquarium-plant-light": {
     "name": "NICREW Full Spectrum Planted LED Light",
     "amazonAffiliateUrl": "https://www.amazon.com/dp/B08SBPVXCW?tag=finvita0b-20",
-    "imageUrl": "",
+    "imageUrl": "https://m.media-amazon.com/images/I/71Ex6f9n5XL._AC_SY450_.jpg",
     "note": "Provides the light intensity most live plants need to grow well."
   }
 }

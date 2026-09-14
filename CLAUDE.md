@@ -77,7 +77,9 @@ not validate `blog-posts.json`/`content/blog/`; a missing fragment file just
 throws loudly when `build.js` tries to read it.
 
 **Adding a new blog post**: add an entry to `public/data/blog-posts.json`
-(slug key, `title`/`metaDescription`/`publishedDate`/`faq`) and a matching
+(slug key, `title`/`metaDescription`/`publishedDate`/`faq`, plus an optional
+`productIds` array — same product keys as `outcomes.json`, rendered as a
+"What to use" section) and a matching
 `content/blog/<slug>.html` fragment (body only — no `<h1>`, nav, or FAQ,
 those are generated), following the structure and SEO checklist in
 `claudedocs/guide_blog_post_writing_20260914.md`. Then run the build command
@@ -145,18 +147,24 @@ keep a minimal back-button-only topbar — no nav clutter mid-task.
 
 - `hello@finvita.online` is not a working inbox yet — needs real email
   forwarding set up at the registrar/Cloudflare before Contact page is real
-- Product cards (`.pcard`/`.pimg` on result pages — the Amazon product
-  recommendations, not the homepage's fish/water/plants doors) still use a
-  gradient placeholder tile, not real photos — needs the Amazon Product
-  Advertising API or similar, more setup than has happened so far. The
-  homepage diagnose-doors gap this note used to describe is done (see
-  Design system above).
+- Product cards (`.pcard`/`.pimg` on result pages and blog posts) show real
+  Amazon product photos as of 2026-09-14, hotlinked directly from each
+  listing's `landingImage` (`products.json`'s `imageUrl` field) rather than
+  through the Product Advertising API — **a deliberate, discussed tradeoff**:
+  no PA-API credentials exist for this project, and the user chose hotlinking
+  over holding off. This is faster to set up than PA-API but sits outside
+  Amazon's documented content-usage terms (which expect product content to
+  come through the API); if PA-API access is set up later, swap `imageUrl`
+  values to API-sourced URLs. If a hotlinked image ever breaks (Amazon
+  reorganizes/removes it), `.pimg`'s gradient placeholder shows through
+  automatically since the `<img>` only renders when `imageUrl` is non-empty.
 - Wizard/result page `<title>` tags still contain em-dashes (an em-dash
   cleanup pass covered landing/browsing pages only; wizard/result was
   explicitly out of scope at the time)
-- Product ASINs (in `data/products.json`) were sourced via web search at a
-  point in time — worth spot-checking they're still live before relying on
-  them for real traffic
+- Product ASINs (in `data/products.json`) were spot-checked 2026-09-14 while
+  sourcing product images — all 13 resolved to the correct, matching
+  product on amazon.com. Re-check periodically since listings can still
+  change or get delisted over time.
 - Blog launched 2026-09-14 with 10 posts (see
   `claudedocs/guide_blog_post_writing_20260914.md` for the topic list and
   writing standard) — all backdated to the same launch date, so there's no
