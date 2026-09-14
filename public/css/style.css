@@ -592,16 +592,24 @@ a { color: var(--accent); }
 
 .pimg {
   height: 140px;
-  background: linear-gradient(135deg, var(--accent-soft-2), var(--accent-soft));
+  background: var(--surface);
 }
-.pimg img { width: 100%; height: 100%; object-fit: cover; }
+.pimg img { width: 100%; height: 100%; object-fit: contain; padding: 0.75rem; }
 
 .pcard > div:not(.pimg) { padding: 1.25rem; flex: 1; display: flex; flex-direction: column; }
 
 .pname { font-weight: 700; margin-bottom: 0.35rem; }
 .pnote { color: var(--ink-soft); font-size: 0.9375rem; flex: 1; margin-bottom: 1rem; }
 
-.pcard .pbtn { align-self: flex-start; margin: 0 1.25rem 1.25rem; }
+.pcard .pbtn {
+  justify-content: center;
+  margin: 0 1.25rem 1.25rem;
+  font-size: 0.8125rem;
+  padding: 0.6rem 0.75rem;
+  gap: 0.35rem;
+  border-radius: var(--radius-md);
+}
+.pcard .pbtn svg { width: 0.85em; height: 0.85em; flex-shrink: 0; }
 
 .disclosure { color: var(--ink-faint); font-size: 0.8125rem; }
 
