@@ -3,6 +3,7 @@
     "title": "Why Is My Fish Gasping at the Surface?",
     "metaDescription": "Fish gasping at the surface almost always means low oxygen or an ammonia/nitrite spike. Here's how to tell which, and what to do in the first 10 minutes.",
     "publishedDate": "2026-09-14",
+    "tags": ["fish-health", "water-quality"],
     "productIds": ["air-stone-pump", "water-test-kit", "water-conditioner"],
     "faq": [
       { "q": "Why is my fish gasping at the surface?", "a": "It's almost always low dissolved oxygen or a water quality problem like an ammonia or nitrite spike — test your water and increase surface agitation right away." },
@@ -13,6 +14,7 @@
     "title": "White Spots on Fish: Is It Ich? Symptoms, Causes, and Treatment",
     "metaDescription": "Small white spots like salt or sugar grains are the classic sign of ich. Here's how it spreads, how to treat the whole tank, and how long it takes to clear.",
     "publishedDate": "2026-09-14",
+    "tags": ["fish-health"],
     "productIds": ["ich-treatment-generic", "aquarium-salt", "quarantine-net-breeder"],
     "faq": [
       { "q": "Is ich contagious to other fish?", "a": "Yes — ich spreads quickly through shared water, so treat the entire tank, not just the fish showing spots." },
@@ -23,6 +25,7 @@
     "title": "Cloudy Fish Tank Water: Causes and How Long It Takes to Clear",
     "metaDescription": "White or gray cloudy tank water is usually a bacterial bloom. Here's what causes it, whether to do a water change, and how long it takes to clear on its own.",
     "publishedDate": "2026-09-14",
+    "tags": ["water-quality"],
     "productIds": ["water-test-kit", "beneficial-bacteria-starter"],
     "faq": [
       { "q": "How long does cloudy tank water take to clear?", "a": "Most bacterial blooms clear within 3-7 days on their own once the excess waste feeding them is reduced." },
@@ -33,6 +36,7 @@
     "title": "How to Cycle a New Fish Tank (Fishless Cycling, Step by Step)",
     "metaDescription": "Cycling a new tank means growing beneficial bacteria before adding fish. Here's the fishless cycling process step by step, and how to know when it's done.",
     "publishedDate": "2026-09-14",
+    "tags": ["water-quality", "beginner-guide"],
     "productIds": ["water-test-kit", "beneficial-bacteria-starter"],
     "faq": [
       { "q": "How long does it take to cycle a fish tank?", "a": "A fishless cycle typically takes 4-6 weeks without a bacteria starter product, or as little as 1-2 weeks with one." },
@@ -43,6 +47,7 @@
     "title": "Green Aquarium Water: Why It Happens and How to Clear an Algae Bloom",
     "metaDescription": "Green, pea-soup-colored water is a free-floating algae bloom caused by too much light and excess nutrients. Here's how to clear it and stop it coming back.",
     "publishedDate": "2026-09-14",
+    "tags": ["water-quality"],
     "productIds": ["algae-control-treatment", "water-test-kit"],
     "faq": [
       { "q": "How do I get rid of green water in my fish tank?", "a": "Cut back light exposure, reduce nutrients with a water change and lighter feeding, and use an algae treatment to clear the current bloom — then keep light and feeding in check to prevent it returning." }
@@ -52,6 +57,7 @@
     "title": "Fish Swimming Sideways or Upside Down? Swim Bladder Disease Explained",
     "metaDescription": "A fish floating, sinking, or swimming sideways usually has swim bladder disorder. Here's what causes it and how fasting and diet changes usually fix it.",
     "publishedDate": "2026-09-14",
+    "tags": ["fish-health"],
     "productIds": ["water-test-kit"],
     "faq": [
       { "q": "Will swim bladder disorder go away on its own?", "a": "Often yes, within a few days of fasting and dietary changes, if the cause is overfeeding or constipation rather than infection." },
@@ -62,6 +68,7 @@
     "title": "Ammonia Spike in an Established Tank: Causes and Emergency Fixes",
     "metaDescription": "An ammonia spike in an older, established tank has different causes than new tank syndrome. Here's what disrupts an established bacteria colony, and how to fix it.",
     "publishedDate": "2026-09-14",
+    "tags": ["water-quality"],
     "productIds": ["water-test-kit", "beneficial-bacteria-starter", "water-conditioner"],
     "faq": [
       { "q": "Why did ammonia spike in my established fish tank?", "a": "It usually means the bacteria colony that normally processes waste was disrupted — by overstocking, overfeeding, decaying matter, or filter media rinsed in tap water — rather than the tank never having cycled in the first place." }
@@ -71,6 +78,7 @@
     "title": "Fin Rot in Fish: How to Spot It Early and Treat It at Home",
     "metaDescription": "Ragged or disappearing fin edges usually mean fin rot. Here's what causes it, how to treat it, and whether fins actually grow back.",
     "publishedDate": "2026-09-14",
+    "tags": ["fish-health"],
     "productIds": ["fin-rot-treatment-generic", "water-conditioner"],
     "faq": [
       { "q": "Will fin rot fins grow back?", "a": "Yes, in most cases — once the infection is treated and water quality is stable, fins regrow over several weeks, though the edge may look slightly different than before." },
@@ -81,6 +89,7 @@
     "title": "Why Are Aquarium Plant Leaves Turning Yellow?",
     "metaDescription": "Yellowing aquarium plant leaves usually mean a nitrogen or iron deficiency. Here's how to tell if it's normal leaf turnover or an actual deficiency, and how to fix it.",
     "publishedDate": "2026-09-14",
+    "tags": ["plant-care"],
     "productIds": ["liquid-plant-fertilizer"],
     "faq": [
       { "q": "Why are my aquarium plant leaves turning yellow?", "a": "It's usually a nitrogen or iron deficiency from irregular fertilizing — a liquid plant fertilizer on a regular schedule typically resolves it within a couple of weeks." }
@@ -90,6 +99,7 @@
     "title": "10 Beginner Fish Tank Mistakes That Kill Fish",
     "metaDescription": "Most beginner aquarium problems trace back to a handful of repeat mistakes. Here are the ten most common, and the specific fix for each.",
     "publishedDate": "2026-09-14",
+    "tags": ["beginner-guide"],
     "productIds": ["water-test-kit", "beneficial-bacteria-starter", "water-conditioner"],
     "faq": [
       { "q": "What's the single biggest beginner fish tank mistake?", "a": "Rushing the timeline — stocking before the tank is cycled, buying fish before researching compatibility, or treating a symptom before testing the water to find the actual cause." }

@@ -77,14 +77,24 @@ not validate `blog-posts.json`/`content/blog/`; a missing fragment file just
 throws loudly when `build.js` tries to read it.
 
 **Adding a new blog post**: add an entry to `public/data/blog-posts.json`
-(slug key, `title`/`metaDescription`/`publishedDate`/`faq`, plus an optional
-`productIds` array — same product keys as `outcomes.json`, rendered as a
-"What to use" section) and a matching
+(slug key, `title`/`metaDescription`/`publishedDate`/`faq`, a `tags` array,
+plus an optional `productIds` array — same product keys as `outcomes.json`,
+rendered as a "What to use" section) and a matching
 `content/blog/<slug>.html` fragment (body only — no `<h1>`, nav, or FAQ,
 those are generated), following the structure and SEO checklist in
 `claudedocs/guide_blog_post_writing_20260914.md`. Then run the build command
 above — it regenerates `public/blog/<slug>.html`, `public/blog.html`'s
 listing, the homepage's "From the blog" cards (latest 3), and the sitemap.
+
+`tags` (added 2026-09-15) drive the color-coded chips on blog cards —
+replaced a plain publish-date kicker there, though individual post pages
+still show their date. Fixed taxonomy lives in `TAG_LABELS` in `build.js`:
+`fish-health`, `water-quality`, `plant-care`, `beginner-guide`, each with
+its own `.tag-<slug>` CSS class (`css/style.css`). A post can carry more
+than one. Adding a genuinely new category needs both a `TAG_LABELS` entry
+and a matching `.tag-<slug>` color rule — pick a new oklch hue at the same
+lightness/chroma as the existing ones so it stays inside the site's muted
+palette rather than introducing a saturated one-off color.
 
 To preview locally: `node serve.js` then open `http://localhost:8080`
 (port is now `$PORT`-overridable — the Claude Code browser preview tool sets

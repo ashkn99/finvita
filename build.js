@@ -185,10 +185,23 @@ function buildBlogPosts() {
   return entries.map(([slug, post]) => ({ slug, ...post }));
 }
 
+const TAG_LABELS = {
+  'fish-health': 'Fish Health',
+  'water-quality': 'Water Quality',
+  'plant-care': 'Plant Care',
+  'beginner-guide': 'Beginner Guide',
+};
+
+function tagsHtml(tags) {
+  if (!tags || tags.length === 0) return '';
+  const chips = tags.map((t) => `<span class="tag-chip tag-${t}">${escapeHtml(TAG_LABELS[t] || t)}</span>`).join('');
+  return `<div class="blog-tags">${chips}</div>`;
+}
+
 function blogCardHtml(post) {
   return `
       <a class="blog-card" href="blog/${post.slug}.html">
-        <p class="kicker">${escapeHtml(formatDate(post.publishedDate))}</p>
+        ${tagsHtml(post.tags)}
         <h3>${escapeHtml(post.title)}</h3>
         <p>${escapeHtml(post.metaDescription)}</p>
       </a>`;

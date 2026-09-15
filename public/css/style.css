@@ -469,10 +469,27 @@ a { color: var(--accent); }
   transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
 }
 .blog-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
-.blog-card .kicker { margin-bottom: 0; }
 .blog-card h3 { margin: 0; font-size: 1.0625rem; color: var(--ink); }
 .blog-card:hover h3 { color: var(--accent); }
 .blog-card p { margin: 0; color: var(--ink-soft); font-size: 0.9375rem; }
+
+/* Content-category tags: soft-pill chips in the same style as .kicker/.tag,
+   each on its own hue so categories read apart at a glance while staying
+   within the site's muted oklch palette rather than saturated rainbow tags. */
+.blog-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.tag-chip {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-full);
+}
+.tag-fish-health     { background: oklch(95% 0.025 258); color: oklch(45% 0.15 258); }
+.tag-water-quality   { background: oklch(95% 0.03 200);  color: oklch(45% 0.13 200); }
+.tag-plant-care      { background: oklch(95% 0.05 145);  color: oklch(42% 0.13 145); }
+.tag-beginner-guide  { background: oklch(95% 0.04 70);   color: oklch(45% 0.13 70); }
 
 /* ---------- FAQ ---------- */
 .faq-list { display: flex; flex-direction: column; gap: 0.75rem; }
