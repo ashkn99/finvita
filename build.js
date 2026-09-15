@@ -133,7 +133,7 @@ function main() {
   fs.mkdirSync(outDir, { recursive: true });
 
   for (const [slug, outcome] of Object.entries(outcomes)) {
-    const canonicalUrl = `${SITE_URL}/results/${slug}.html`;
+    const canonicalUrl = `${SITE_URL}/results/${slug}`;
     const html = template
       .replace(/{{TITLE}}/g, escapeHtml(outcome.title))
       .replace(/{{EXPLANATION}}/g, escapeHtml(outcome.explanation))
@@ -168,7 +168,7 @@ function buildBlogPosts() {
 
   const entries = Object.entries(posts).sort((a, b) => b[1].publishedDate.localeCompare(a[1].publishedDate));
   for (const [slug, post] of entries) {
-    const canonicalUrl = `${SITE_URL}/blog/${slug}.html`;
+    const canonicalUrl = `${SITE_URL}/blog/${slug}`;
     const bodyHtml = fs.readFileSync(path.join(__dirname, 'content', 'blog', `${slug}.html`), 'utf8');
     const html = template
       .replace(/{{TITLE}}/g, escapeHtml(post.title))
@@ -226,11 +226,11 @@ function updateHomepageBlogSection(blogPosts) {
 
 function buildSitemap(outcomes, blogPosts) {
   const staticPages = [
-    '/', '/diagnose-fish.html', '/diagnose-water.html', '/diagnose-plants.html',
-    '/about.html', '/privacy.html', '/contact.html', '/blog.html',
+    '/', '/diagnose-fish', '/diagnose-water', '/diagnose-plants',
+    '/about', '/privacy', '/contact', '/blog',
   ];
-  const resultPages = Object.keys(outcomes).map((slug) => `/results/${slug}.html`);
-  const blogPages = blogPosts.map((post) => `/blog/${post.slug}.html`);
+  const resultPages = Object.keys(outcomes).map((slug) => `/results/${slug}`);
+  const blogPages = blogPosts.map((post) => `/blog/${post.slug}`);
   const urls = [...staticPages, ...resultPages, ...blogPages]
     .map((p) => `  <url><loc>${SITE_URL}${p}</loc></url>`)
     .join('\n');
