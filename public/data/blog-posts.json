@@ -153,5 +153,81 @@
       { "q": "Is algae on plant leaves harmful?", "a": "A light dusting usually isn't fatal, but a heavy coating blocks light from reaching the leaf and can smother slower-growing plants over time, so it's worth treating early." },
       { "q": "Why does algae keep coming back on my plants?", "a": "Usually the light is running too long relative to the nutrients available — cutting light to 6-8 hours a day and fertilizing consistently addresses the underlying imbalance, not just the visible algae." }
     ]
+  },
+  "why-does-my-fish-tank-smell-bad": {
+    "title": "Why Does My Fish Tank Smell Bad?",
+    "metaDescription": "A bad-smelling fish tank almost always means decaying organic matter or a bacterial imbalance. Here's what to check and how to fix it.",
+    "publishedDate": "2026-09-16",
+    "tags": ["water-quality"],
+    "productIds": ["water-test-kit", "water-conditioner"],
+    "faq": [
+      { "q": "Why does my fish tank smell bad?", "a": "A bad smell almost always means decaying organic matter or a bacterial/ammonia imbalance — check for anything decaying in the decor, then test your water and do a partial water change." },
+      { "q": "Will a water change fix a smelly tank?", "a": "It helps, but only addresses the underlying cause if you also find and remove whatever's decaying — otherwise the smell tends to come back." }
+    ]
+  },
+  "fish-hiding-and-not-eating": {
+    "title": "Fish Hiding and Not Eating? What It Means",
+    "metaDescription": "A fish hiding and not eating is usually the earliest sign of stress or illness, before other symptoms appear. Here's what to check first.",
+    "publishedDate": "2026-09-16",
+    "tags": ["fish-health"],
+    "productIds": ["water-test-kit", "water-conditioner", "quarantine-net-breeder"],
+    "faq": [
+      { "q": "Why is my fish hiding and not eating?", "a": "This is usually the earliest sign of stress or illness, before other symptoms appear — testing your water is the first step since a hidden water quality issue is the most common cause." },
+      { "q": "How long should I wait before worrying?", "a": "A day after a stressful event like a water change or new tankmate usually isn't a concern; several days of hiding and not eating, or other symptoms appearing, is worth acting on." }
+    ]
+  },
+  "why-are-my-fish-fighting": {
+    "title": "Why Are My Fish Fighting? Aggression and Stocking Problems",
+    "metaDescription": "Ongoing fish aggression is usually a stocking problem, not a behavioral one. Here's how to fix tank size, species mix, and hiding spots.",
+    "publishedDate": "2026-09-16",
+    "tags": ["fish-health", "beginner-guide"],
+    "productIds": ["aquarium-decor-hiding-spots"],
+    "faq": [
+      { "q": "How do I stop fish from fighting?", "a": "Add more hiding spots and visual breaks first — most aggression is territorial and eases once fish can't constantly see each other." },
+      { "q": "Is some aggression normal in a community tank?", "a": "Brief chasing or fin-flaring during initial introductions is common; ongoing chasing, biting, or a fish hiding constantly is not and needs addressing." }
+    ]
+  },
+  "fish-died-suddenly-what-to-check": {
+    "title": "Fish Died Suddenly? What to Check Before Adding More",
+    "metaDescription": "Occasional fish loss can happen from old age, but test your water before restocking. Here's what to check after losing a fish.",
+    "publishedDate": "2026-09-16",
+    "tags": ["fish-health", "beginner-guide"],
+    "productIds": ["water-test-kit"],
+    "faq": [
+      { "q": "Should I test my water after losing a fish?", "a": "Yes, even in an established tank — a hidden water quality problem can affect the rest of your fish even if only one showed symptoms." },
+      { "q": "How long should I wait before adding new fish?", "a": "A few days, once you've confirmed water quality is stable and no other fish are showing delayed symptoms." }
+    ]
+  },
+  "brown-tea-colored-aquarium-water": {
+    "title": "Brown or Tea-Colored Aquarium Water: Is It Safe?",
+    "metaDescription": "Brown or tea-colored aquarium water is usually tannins from driftwood or leaves — cosmetic, not harmful. Here's how to clear it if you want to.",
+    "publishedDate": "2026-09-16",
+    "tags": ["water-quality"],
+    "productIds": ["activated-carbon-filter-media"],
+    "faq": [
+      { "q": "Is tea-colored aquarium water safe for fish?", "a": "Yes — tannins from driftwood or leaves are cosmetic, not harmful, and some fish species actually benefit from the slightly acidic, tannin-stained water it creates." },
+      { "q": "How do I get rid of brown tannin water?", "a": "Add activated carbon to your filter, or pre-soak/boil new driftwood before adding it to reduce how much it leaches." }
+    ]
+  },
+  "foam-bubbles-on-aquarium-water-surface": {
+    "title": "Foam or Bubbles on Your Aquarium Water Surface",
+    "metaDescription": "Foam or bubbles on your aquarium's surface usually mean a buildup of dissolved proteins from overfeeding or waste. Here's how to clear it.",
+    "publishedDate": "2026-09-16",
+    "tags": ["water-quality"],
+    "productIds": ["water-conditioner", "air-stone-pump"],
+    "faq": [
+      { "q": "Why is there foam on top of my fish tank?", "a": "It's usually a buildup of dissolved proteins from overfeeding or waste — a partial water change and more surface agitation typically clears it within a few days." },
+      { "q": "Is foam on aquarium water harmful?", "a": "Not directly, but it signals organic waste building up faster than it's processed, which can lead to an ammonia spike if left unaddressed." }
+    ]
+  },
+  "how-to-know-if-fish-species-are-compatible": {
+    "title": "How to Know if Two Fish Species Are Compatible",
+    "metaDescription": "Fish compatibility depends on adult size, temperament, water parameters, and tank space together. Here's how to check before combining species.",
+    "publishedDate": "2026-09-16",
+    "tags": ["beginner-guide", "fish-health"],
+    "productIds": [],
+    "faq": [
+      { "q": "How do I know if two fish species are compatible?", "a": "Check adult size, temperament, water parameter needs, and available tank space for each species — compatibility depends on all four together, not any single factor." }
+    ]
   }
 }

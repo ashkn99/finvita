@@ -130,7 +130,7 @@
     "title": "Stress or Early Illness",
     "explanation": "In an established tank, prolonged hiding or loss of appetite is usually stress or the early stage of an illness that hasn't shown visible symptoms yet. Test your water first to rule out a quality issue, and keep a close eye out for any visible symptoms developing.",
     "confidence": "possible",
-    "productIds": ["water-test-kit", "water-conditioner"],
+    "productIds": ["water-test-kit", "water-conditioner", "quarantine-net-breeder"],
     "causes": [
       "A water quality issue that hasn't shown up as a visible symptom yet.",
       "Recent changes — a new tankmate, rearranged decor, or a move to a new tank — can cause temporary stress.",
