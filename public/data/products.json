@@ -76,5 +76,29 @@
     "amazonAffiliateUrl": "https://www.amazon.com/dp/B08SBPVXCW?tag=finvita0b-20",
     "imageUrl": "https://m.media-amazon.com/images/I/71Ex6f9n5XL._AC_SY300_.jpg",
     "note": "Provides the light intensity most live plants need to grow well."
+  },
+  "liquid-co2-supplement": {
+    "name": "Seachem Flourish Excel",
+    "amazonAffiliateUrl": "https://www.amazon.com/dp/B000256962?tag=finvita0b-20",
+    "imageUrl": "https://m.media-amazon.com/images/I/61V3cVDRUYL._AC_SY879_.jpg",
+    "note": "Bioavailable carbon source for plants when CO2, not light, is the limiting factor."
+  },
+  "root-tabs": {
+    "name": "Seachem Flourish Tabs",
+    "amazonAffiliateUrl": "https://www.amazon.com/dp/B001NTE30A?tag=finvita0b-20",
+    "imageUrl": "https://m.media-amazon.com/images/I/815aIJGfEsL._AC_SY679_.jpg",
+    "note": "Root-feeding supplement for heavy root feeders like swords and crypts — liquid fertilizer alone doesn't reach the substrate."
+  },
+  "aquarium-light-timer": {
+    "name": "BN-LINK Digital Outlet Timer",
+    "amazonAffiliateUrl": "https://www.amazon.com/dp/B071KXV73N?tag=finvita0b-20",
+    "imageUrl": "https://m.media-amazon.com/images/I/61-YOCDpJvL._SX342_.jpg",
+    "note": "Keeps light duration consistent day to day — the single biggest factor in preventing algae from coming back."
+  },
+  "uv-sterilizer": {
+    "name": "Coralife Turbo-Twist 3X UV Sterilizer",
+    "amazonAffiliateUrl": "https://www.amazon.com/dp/B0064JHVGC?tag=finvita0b-20",
+    "imageUrl": "https://m.media-amazon.com/images/I/61FqB6R5q6L._AC_SY450_.jpg",
+    "note": "Clears free-floating algae as water passes through it — worth it for tanks with recurring green water."
   }
 }

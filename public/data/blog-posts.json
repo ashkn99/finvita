@@ -48,7 +48,7 @@
     "metaDescription": "Green, pea-soup-colored water is a free-floating algae bloom caused by too much light and excess nutrients. Here's how to clear it and stop it coming back.",
     "publishedDate": "2026-09-14",
     "tags": ["water-quality"],
-    "productIds": ["algae-control-treatment", "water-test-kit"],
+    "productIds": ["algae-control-treatment", "water-test-kit", "aquarium-light-timer", "uv-sterilizer"],
     "faq": [
       { "q": "How do I get rid of green water in my fish tank?", "a": "Cut back light exposure, reduce nutrients with a water change and lighter feeding, and use an algae treatment to clear the current bloom — then keep light and feeding in check to prevent it returning." }
     ]
@@ -90,7 +90,7 @@
     "metaDescription": "Yellowing aquarium plant leaves usually mean a nitrogen or iron deficiency. Here's how to tell if it's normal leaf turnover or an actual deficiency, and how to fix it.",
     "publishedDate": "2026-09-14",
     "tags": ["plant-care"],
-    "productIds": ["liquid-plant-fertilizer"],
+    "productIds": ["liquid-plant-fertilizer", "root-tabs"],
     "faq": [
       { "q": "Why are my aquarium plant leaves turning yellow?", "a": "It's usually a nitrogen or iron deficiency from irregular fertilizing — a liquid plant fertilizer on a regular schedule typically resolves it within a couple of weeks." }
     ]
@@ -103,6 +103,55 @@
     "productIds": ["water-test-kit", "beneficial-bacteria-starter", "water-conditioner"],
     "faq": [
       { "q": "What's the single biggest beginner fish tank mistake?", "a": "Rushing the timeline — stocking before the tank is cycled, buying fish before researching compatibility, or treating a symptom before testing the water to find the actual cause." }
+    ]
+  },
+  "why-are-my-new-aquarium-plants-melting": {
+    "title": "Why Are My New Aquarium Plants Melting?",
+    "metaDescription": "New aquarium plants often melt within days of planting. Here's how to tell normal transition melt from an actual problem, and what to do about it.",
+    "publishedDate": "2026-09-16",
+    "tags": ["plant-care", "beginner-guide"],
+    "productIds": [],
+    "faq": [
+      { "q": "Is it normal for new aquarium plants to lose leaves after planting?", "a": "Yes — most plants are grown out of water at the nursery, and the leaves they grew that way can't survive underwater, so they die back while the plant regrows underwater-adapted leaves." },
+      { "q": "How long does plant melt last?", "a": "Typically a few days to a few weeks; new growth should start appearing within that window if the plant is otherwise healthy." },
+      { "q": "Should I remove melting leaves?", "a": "Yes — trim off dying leaves as they go so they don't rot and foul the water, but leave any green, healthy tissue in place." },
+      { "q": "When should I worry it's not just melt?", "a": "If the whole plant turns to mush, the rhizome or crown rots, or no new growth appears after several weeks, that points to rot or a light/CO2 problem rather than normal transition melt." }
+    ]
+  },
+  "aquarium-plants-not-growing-light-or-co2": {
+    "title": "Aquarium Plants Not Growing? It's Probably Light or CO2",
+    "metaDescription": "Stalled or stunted aquarium plant growth is almost always a light or CO2 limitation. Here's how to tell which one, and the fix for each.",
+    "publishedDate": "2026-09-16",
+    "tags": ["plant-care"],
+    "productIds": ["aquarium-plant-light", "aquarium-light-timer", "liquid-co2-supplement"],
+    "faq": [
+      { "q": "Why won't my aquarium plants grow?", "a": "Slow or stalled growth is usually a light or CO2 limitation — a full-spectrum plant light run 8-10 hours a day resolves most cases, though some species need supplemental CO2 to grow well." },
+      { "q": "How do I know if it's light or CO2 that's limiting growth?", "a": "Start with light if you're running a basic stock fixture — it's the more common problem. If you already run a dedicated plant light for 8-10 hours a day and growth is still stalled, CO2 is the more likely bottleneck." },
+      { "q": "Do all aquarium plants need extra light and CO2?", "a": "No — low-light species like anubias, java fern, and java moss grow fine under a basic light with no CO2 supplementation." }
+    ]
+  },
+  "holes-in-aquarium-plant-leaves": {
+    "title": "Holes in Aquarium Plant Leaves: What Causes It and How to Fix It",
+    "metaDescription": "Holes or see-through patches in aquarium plant leaves usually mean a potassium or micronutrient deficiency, not pests or disease. Here's how to fix it.",
+    "publishedDate": "2026-09-16",
+    "tags": ["plant-care"],
+    "productIds": ["liquid-plant-fertilizer"],
+    "faq": [
+      { "q": "What causes holes in aquarium plant leaves?", "a": "Holes or see-through patches in otherwise healthy leaves usually point to a potassium or micronutrient deficiency, corrected with a comprehensive liquid fertilizer dosed consistently." },
+      { "q": "Is it pests instead of a deficiency?", "a": "Usually not — pest damage tends to be ragged, irregular bite marks on a few leaves, while a deficiency produces more uniform holes or thin patches spread across multiple leaves." },
+      { "q": "How long until holes in leaves heal?", "a": "The holes themselves won't heal, but new growth should come in healthy within about two weeks of consistent fertilizing." }
+    ]
+  },
+  "algae-on-aquarium-plant-leaves": {
+    "title": "Algae on Aquarium Plant Leaves: How to Remove It and Stop It Coming Back",
+    "metaDescription": "Algae growing directly on plant leaves points to a light/nutrient imbalance. Here's how to clear it and stop it from coming back.",
+    "publishedDate": "2026-09-16",
+    "tags": ["plant-care"],
+    "productIds": ["algae-control-treatment", "aquarium-light-timer"],
+    "faq": [
+      { "q": "How do I remove algae from aquarium plant leaves?", "a": "Cut back light duration, treat with an algae control product, and keep plants well-fertilized so they outcompete algae for the same nutrients going forward." },
+      { "q": "Is algae on plant leaves harmful?", "a": "A light dusting usually isn't fatal, but a heavy coating blocks light from reaching the leaf and can smother slower-growing plants over time, so it's worth treating early." },
+      { "q": "Why does algae keep coming back on my plants?", "a": "Usually the light is running too long relative to the nutrients available — cutting light to 6-8 hours a day and fertilizing consistently addresses the underlying imbalance, not just the visible algae." }
     ]
   }
 }
