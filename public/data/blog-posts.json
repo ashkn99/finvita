@@ -131,15 +131,16 @@
     ]
   },
   "holes-in-aquarium-plant-leaves": {
-    "title": "Holes in Aquarium Plant Leaves: What Causes It and How to Fix It",
-    "metaDescription": "Holes or see-through patches in aquarium plant leaves usually mean a potassium or micronutrient deficiency, not pests or disease. Here's how to fix it.",
+    "title": "Holes in Aquarium Plant Leaves: Causes and How to Fix Them",
+    "metaDescription": "Holes in aquarium plant leaves, including Anubias and Java Fern, usually mean a potassium deficiency, not pests. Here's how to spot it and fix it.",
     "publishedDate": "2026-09-16",
     "tags": ["plant-care"],
     "productIds": ["liquid-plant-fertilizer"],
     "faq": [
       { "q": "What causes holes in aquarium plant leaves?", "a": "Holes or see-through patches in otherwise healthy leaves usually point to a potassium or micronutrient deficiency, corrected with a comprehensive liquid fertilizer dosed consistently." },
       { "q": "Is it pests instead of a deficiency?", "a": "Usually not — pest damage tends to be ragged, irregular bite marks on a few leaves, while a deficiency produces more uniform holes or thin patches spread across multiple leaves." },
-      { "q": "How long until holes in leaves heal?", "a": "The holes themselves won't heal, but new growth should come in healthy within about two weeks of consistent fertilizing." }
+      { "q": "How long until holes in leaves heal?", "a": "The holes themselves won't heal, but new growth should come in healthy within about two weeks of consistent fertilizing." },
+      { "q": "Why does my Anubias have holes in its leaves?", "a": "Usually a slow-developing potassium deficiency in a tank with little or no fertilizer, or a rotting rhizome if it's been buried in the substrate. Old leaves also break down naturally over time." }
     ]
   },
   "algae-on-aquarium-plant-leaves": {
@@ -166,25 +167,28 @@
     ]
   },
   "fish-hiding-and-not-eating": {
-    "title": "Fish Hiding and Not Eating? What It Means",
-    "metaDescription": "A fish hiding and not eating is usually the earliest sign of stress or illness, before other symptoms appear. Here's what to check first.",
+    "title": "Fish Hiding and Not Eating? Causes and What to Do First",
+    "metaDescription": "A fish hiding and not eating is usually the first sign of stress, bullying, or early illness. Test your water first, then check these causes.",
     "publishedDate": "2026-09-16",
     "tags": ["fish-health"],
     "productIds": ["water-test-kit", "water-conditioner", "quarantine-net-breeder"],
     "faq": [
       { "q": "Why is my fish hiding and not eating?", "a": "This is usually the earliest sign of stress or illness, before other symptoms appear — testing your water is the first step since a hidden water quality issue is the most common cause." },
-      { "q": "How long should I wait before worrying?", "a": "A day after a stressful event like a water change or new tankmate usually isn't a concern; several days of hiding and not eating, or other symptoms appearing, is worth acting on." }
+      { "q": "How long should I wait before worrying?", "a": "A day after a stressful event like a water change or new tankmate usually isn't a concern; several days of hiding and not eating, or other symptoms appearing, is worth acting on." },
+      { "q": "How long can a fish go without eating?", "a": "A healthy adult tropical fish can go several days to a week without food without lasting harm. Find out why it stopped eating rather than adding more food, which only fouls the water." },
+      { "q": "Is it normal for a new fish to hide and not eat?", "a": "Yes. Most new fish start eating within two to three days of being added, and some timid species take up to a week." }
     ]
   },
   "why-are-my-fish-fighting": {
-    "title": "Why Are My Fish Fighting? Aggression and Stocking Problems",
-    "metaDescription": "Ongoing fish aggression is usually a stocking problem, not a behavioral one. Here's how to fix tank size, species mix, and hiding spots.",
+    "title": "Why Are My Fish Fighting? Signs, Causes, and How to Stop It",
+    "metaDescription": "Fish fighting is usually a stocking problem: too little space, the wrong tankmates, or too few hiding spots. Here's how to tell and how to fix it.",
     "publishedDate": "2026-09-16",
     "tags": ["fish-health", "beginner-guide"],
     "productIds": ["aquarium-decor-hiding-spots"],
     "faq": [
       { "q": "How do I stop fish from fighting?", "a": "Add more hiding spots and visual breaks first — most aggression is territorial and eases once fish can't constantly see each other." },
-      { "q": "Is some aggression normal in a community tank?", "a": "Brief chasing or fin-flaring during initial introductions is common; ongoing chasing, biting, or a fish hiding constantly is not and needs addressing." }
+      { "q": "Is some aggression normal in a community tank?", "a": "Brief chasing or fin-flaring during initial introductions is common; ongoing chasing, biting, or a fish hiding constantly is not and needs addressing." },
+      { "q": "Are my fish playing or fighting?", "a": "Short chases with no torn fins and every fish still eating are usually harmless. One fish being constantly targeted, injured, or pushed into hiding is real fighting." }
     ]
   },
   "fish-died-suddenly-what-to-check": {
@@ -199,14 +203,16 @@
     ]
   },
   "brown-tea-colored-aquarium-water": {
-    "title": "Brown or Tea-Colored Aquarium Water: Is It Safe?",
-    "metaDescription": "Brown or tea-colored aquarium water is usually tannins from driftwood or leaves — cosmetic, not harmful. Here's how to clear it if you want to.",
+    "title": "Brown or Tea-Colored Aquarium Water: Causes and How to Clear It",
+    "metaDescription": "Brown or tea-colored aquarium water is usually tannins from driftwood or leaves. It's safe for fish, and activated carbon clears it if you want.",
     "publishedDate": "2026-09-16",
     "tags": ["water-quality"],
     "productIds": ["activated-carbon-filter-media"],
     "faq": [
       { "q": "Is tea-colored aquarium water safe for fish?", "a": "Yes — tannins from driftwood or leaves are cosmetic, not harmful, and some fish species actually benefit from the slightly acidic, tannin-stained water it creates." },
-      { "q": "How do I get rid of brown tannin water?", "a": "Add activated carbon to your filter, or pre-soak/boil new driftwood before adding it to reduce how much it leaches." }
+      { "q": "How do I get rid of brown tannin water?", "a": "Add activated carbon to your filter, or pre-soak/boil new driftwood before adding it to reduce how much it leaches." },
+      { "q": "How long does driftwood make the water brown?", "a": "Most new driftwood leaches heavily for the first few weeks, then tapers off over one to several months. Boiling it before adding it speeds this up." },
+      { "q": "Do tannins lower pH?", "a": "Slightly. The drop is noticeable in soft, poorly buffered water and usually negligible in hard tap water." }
     ]
   },
   "foam-bubbles-on-aquarium-water-surface": {
